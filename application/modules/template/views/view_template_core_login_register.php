@@ -28,8 +28,9 @@
     <link href="css/custom.css" rel="stylesheet">
 <body>
 	<?php
-          $this->load->view($namamodule .'/'.$namafileview);
-        ?>
+                                  $this->load->view($cakarhmvc .'/'.$cakarhmvcview);
+                                ?>
+
 	<!-- /login -->
 		
 	<!-- COMMON SCRIPTS -->

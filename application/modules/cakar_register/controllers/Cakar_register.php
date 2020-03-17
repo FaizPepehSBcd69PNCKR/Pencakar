@@ -15,11 +15,11 @@ class Cakar_register extends MX_Controller {
 	function index()
 	{
 		$data = array(
-			'namamodule' 	=> "cakar_register",
-			'namafileview' 	=> "V_cakar_register",
-			'tampil'		=> $this->m_cakar_register->tampil(),
+			'cakarhmvc' 	 	=> "cakar_register",
+			'cakarhmvcview' 	=> "V_cakar_register",
+			'tampil'			=> $this->m_cakar_register->tampil(),
 		);
-		echo Modules::run('template/tampilCore7', $data);
+		echo Modules::run('template/view_template_login_register', $data);
 	}
 	
 	function taka()

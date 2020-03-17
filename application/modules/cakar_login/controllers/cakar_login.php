@@ -8,7 +8,7 @@ class cakar_login extends MX_Controller {
 		parent::__construct();
 		// model
 		 $this->load->model('m_cakar_login');
-		 $this->load->model('login/m_session');
+		 
 	}
 
 	
@@ -16,11 +16,11 @@ class cakar_login extends MX_Controller {
 	function index()
 	{
 		$data = array(
-			'namamodule' 	=> "cakar_login",
-			'namafileview' 	=> "V_cakar_login",
+			'cakarhmvc' 		=> "cakar_login",
+			'cakarhmvcview' 	=> "V_cakar_login",
 			'tampil'		=> $this->m_cakar_login->tampil(),
 		);
-		echo Modules::run('template/view_template_core7', $data);
+		echo Modules::run('template/view_template_login_register', $data);
 	}
 
 	function aksi_login(){

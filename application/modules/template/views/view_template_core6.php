@@ -32,8 +32,9 @@
 <body id="login_bg">
 	
 	<?php
-          $this->load->view($namamodule .'/'.$namafileview);
-        ?>
+                                  $this->load->view($cakarhmvc .'/'.$cakarhmvcview);
+                                ?>
+
 	<!-- /login -->
 		
 	<!-- COMMON SCRIPTS -->
