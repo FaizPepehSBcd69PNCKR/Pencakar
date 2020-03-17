@@ -8,7 +8,7 @@ class profil_saya extends MX_Controller {
 		parent::__construct();
 		// model
 		 $this->load->model('m_profil_saya');
-		 $this->load->model('login/m_session');
+		
 	}
 
 	
@@ -16,11 +16,11 @@ class profil_saya extends MX_Controller {
 	function index()
 	{
 		$data = array(
-			'namamodule' 	=> "profil_saya",
-			'namafileview' 	=> "V_profil_saya",
+			'akunhmvc' 		=> "profil_saya",
+			'akunhmvcview' 	=> "V_profil_saya",
 			'tampil'        => $this->m_profil_saya->tampil(),
 		);
-		echo Modules::run('template/tampilCore2', $data);
+		echo Modules::run('template/tampilCore_back_end2', $data);
 	}
 	
 	function tambah()
