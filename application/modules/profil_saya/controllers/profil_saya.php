@@ -25,8 +25,6 @@ class Profil_saya extends MX_Controller {
 
 	function edit(){
 		$this->m_profil_saya->edit();
-		redirect();
-		
 	}
 	
 }
