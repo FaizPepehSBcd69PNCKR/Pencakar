@@ -14,21 +14,13 @@ class M_profil_saya extends CI_Model {
 
 		$nama    		= $this->input->post('nama_lengkap');
 		$nomor_telepon	= $this->input->post('nomor_telepon');
-		$email 	 		= $this->input->post('email');
 
 		$data   = array('nama_lengkap' 			=> $nama,
-		 				'nomor_telepon' => $nomor_telepon,
-		  				'email' 		=> $email
+		 				'nomor_telepon' 		=> $nomor_telepon,
 		  			);
 
 		$this->db->where('id_rl_karyawan',$id)->update('rl_karyawan',$data);
 
 		
 	}
-
-	// function hapus($id)
-	// {
-	// 	$this->db->where('id',$id)->delete('data_guru');
-	// }
 }
-?>

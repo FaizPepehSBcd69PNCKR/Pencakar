@@ -15,7 +15,7 @@ class Cv_karyawan extends MX_Controller {
 	function index()
 	{
 		$data = array(
-			'cakarhmvc' 		=> "Cv_karyawan",
+			'cakarhmvc' 		=> "cv_karyawan",
 			'cakarhmvcview' 	=> "v_cv_karyawan",
 			'tampil'			=> $this->m_cv_karyawan->tampil()
 		);
@@ -23,6 +23,7 @@ class Cv_karyawan extends MX_Controller {
 	}
 	function tambah(){
 		$this->m_cv_karyawan->tambahh();
-		// redirect('Cv_karyawan');
+		// redirect('cv_karyawan');
 			}
 }
+

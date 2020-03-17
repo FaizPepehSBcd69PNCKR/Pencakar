@@ -34,7 +34,7 @@ class cakar_login extends MX_Controller {
 		if ($sapi== 1) {
 			$data_session = array('nomor_telepon'=>$nomor_telepon,'status' => "login",'authenticated'=> true);
 			$this->session->set_userdata($data_session);
-			redirect('portal2_index');
+			redirect('cv_karyawan');
 
 		}else{
 			echo"<script>alert('Username Atau Password Anda Salah');</script>"; 

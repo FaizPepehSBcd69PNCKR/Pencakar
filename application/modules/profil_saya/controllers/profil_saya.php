@@ -16,18 +16,22 @@ class Profil_saya extends MX_Controller {
 	function index()
 	{
 		$data = array(
-			'akunhmvc' 	    => "profil_saya",
+
+			'akunhmvc' 		=> "profil_saya",
 			'akunhmvcview' 	=> "V_profil_saya",
 			'tampil'        => $this->m_profil_saya->tampil(),
 		);
-		echo Modules::run('template/tampilCore_back_end', $data);
+		echo Modules::run('template/tampilCore_back_end2', $data);
+	}
+	
+	function tambah()
+	{
+		$this->m_data_guru->tambah();
+		redirect('edit_cv');
 	}
 
 	function edit(){
 		$this->m_profil_saya->edit();
-		redirect();
-		
 	}
 	
 }
-?>
