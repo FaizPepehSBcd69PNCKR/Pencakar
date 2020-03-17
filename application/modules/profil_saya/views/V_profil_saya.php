@@ -29,13 +29,13 @@
             <div class="col-md-6">
               <div class="form-group">
                 <label>Nama lengkap</label>
-                <input type="text" class="form-control" placeholder="Nama lengkap">
+                <input type="text" class="form-control" disabled="disabled" name="nama">
               </div>
             </div>
           <div class="col-md-6">
               <div class="form-group">
                 <label>Nomer Telepon</label>
-                <input type="text" class="form-control" placeholder="Nomer telepon">
+                <input type="text" disabled="disabled" class="form-control">
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@
             <div class="col-md-6">
               <div class="form-group">
                 <label>Email</label>
-                <input type="emil" class="form-control" placeholder="Email">
+                <input type="emil" disabled="disabled" class="form-control">
               </div>
             </div>
           </div>
@@ -53,7 +53,7 @@
             <div class="col-md-12">
               <div class="form-group">
                 <label>Personal info</label>
-                <textarea style="height:100px;" class="form-control" placeholder="Personal info"></textarea>
+                <textarea style="height:100px;" class="form-control"></textarea>
               </div>
             </div>
           </div>
