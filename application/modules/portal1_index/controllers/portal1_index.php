@@ -16,40 +16,11 @@ class portal1_index extends MX_Controller {
 	function index()
 	{
 		$data = array(
-			'namamodule' 	=> "portal1_index",
-			'namafileview' 	=> "V_portal1_index",
+			'cakarhmvc' 	=> "portal1_index",
+			'cakarhmvcview' 	=> "V_portal1_index",
 			'tampil'		=> $this->m_portal1_index->tampil(),
 		);
-		echo Modules::run('template/tampilCore', $data);
-	}
-
-	function tambah()
-	{
-		$this->m_data_sekolah->tambah();
-		redirect('data_sekolah');
-	}
-
-	function edit()
-	{
-		$this->m_data_sekolah->edit();
-		redirect('data_sekolah');
-	}
-
-	function hapus($id)
-	{
-		$this->m_data_sekolah->hapus($id);
-		redirect('data_sekolah');
-	}
-
-	function cari()
-	{
-		$data = array(
-			'namamodule' 	=> "data_sekolah",
-			'namafileview' 	=> "V_data_sekolah",
-			'tampil'		=> $this->m_data_sekolah->cari(),
-		);
-		echo Modules::run('template/tampilCore', $data);
+		echo Modules::run('template/tampilCore_front_end', $data);
 	}
 	
 }
- 
