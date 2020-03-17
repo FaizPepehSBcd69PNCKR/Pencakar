@@ -8,8 +8,7 @@ class Cv_karyawan extends MX_Controller {
 		parent::__construct();
 		// model
 		 $this->load->model('m_cv_karyawan');
-		 
-	}
+
 
 	
 	// index
@@ -27,3 +26,4 @@ class Cv_karyawan extends MX_Controller {
 		// redirect('Cv_karyawan');
 			}
 }
+

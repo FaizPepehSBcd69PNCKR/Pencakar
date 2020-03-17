@@ -8,33 +8,19 @@ class M_profil_saya extends CI_Model {
 		return $this->db->get('rl_karyawan')->result();
 	}
 
-	function tambah()
-	{
-		$nama    = $this->input->post('nama_guru');
-		$alamat	 = $this->input->post('alamat_guru');
-		$agama 	 = $this->input->post('agama');
-
-		$data    = array('nama_guru' => $nama, 'alamat_guru' => $alamat, 'agama' => $agama);
-
-		$this->db->insert("data_guru",$data);
-	}
-
 	function edit()
 	{
-		$id      = $this->input->post('id');
+		$id      = $this->input->post('id_rl_karyawan');
 
-		$nama    = $this->input->post('nama_guru');
-		$alamat	 = $this->input->post('alamat_guru');
-		$agama 	 = $this->input->post('agama');
+		$nama    		= $this->input->post('nama_lengkap');
+		$nomor_telepon	= $this->input->post('nomor_telepon');
 
-		$data   = array('nama_guru' => $nama, 'alamat_guru' => $alamat, 'agama' => $agama);
+		$data   = array('nama_lengkap' 			=> $nama,
+		 				'nomor_telepon' 		=> $nomor_telepon,
+		  			);
 
-		$this->db->where('id',$id)->update('data_guru',$data);
-	}
+		$this->db->where('id_rl_karyawan',$id)->update('rl_karyawan',$data);
 
-	function hapus($id)
-	{
-		$this->db->where('id',$id)->delete('data_guru');
+		
 	}
 }
-?>

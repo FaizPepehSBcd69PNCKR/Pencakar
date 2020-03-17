@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class profil_saya extends MX_Controller {
+class Profil_saya extends MX_Controller {
 
 	function __construct()
 	{
@@ -16,6 +16,7 @@ class profil_saya extends MX_Controller {
 	function index()
 	{
 		$data = array(
+
 			'akunhmvc' 		=> "profil_saya",
 			'akunhmvcview' 	=> "V_profil_saya",
 			'tampil'        => $this->m_profil_saya->tampil(),
@@ -33,12 +34,18 @@ class profil_saya extends MX_Controller {
 	{
 		$this->m_data_guru->edit();
 		redirect('edit_cv');
+
+			'akunhmvc' 	=> "profil_saya",
+			'akunhmvcview' 	=> "V_profil_saya",
+			'tampil'        => $this->m_profil_saya->tampil(),
+		);
+		echo Modules::run('template/tampilCore_back_end', $data);
+
 	}
 
-	function hapus($id)
-	{
-		$this->m_data_guru->hapus($id);
-		redirect('edit_cv');
+	function edit(){
+		$this->m_profil_saya->edit();
 	}
+	
 }
 ?>

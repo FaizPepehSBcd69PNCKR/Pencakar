@@ -8,7 +8,6 @@ class p_calon_karyawan extends MX_Controller {
 		parent::__construct();
 		// model
 		 $this->load->model('m_p_calon_karyawan');
-		 $this->load->model('login/m_session');
 	}
 
 	
@@ -16,11 +15,11 @@ class p_calon_karyawan extends MX_Controller {
 	function index()
 	{
 		$data = array(
-			'namamodule' 	=> "p_calon_karyawan",
-			'namafileview' 	=> "V_p_calon_karyawan",
+			'akunhmvc' 	=> "p_calon_karyawan",
+			'akunhmvcview' 	=> "V_p_calon_karyawan",
 			'tampil'        => $this->m_p_calon_karyawan->tampil(),
 		);
-		echo Modules::run('template/tampilCore3', $data);
+		echo Modules::run('template/tampilCore_back_end', $data);
 	}
 	
 	function tambah()
