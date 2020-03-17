@@ -16,7 +16,7 @@ class Profil_saya extends MX_Controller {
 	function index()
 	{
 		$data = array(
-			'akunhmvc' 	=> "profil_saya",
+			'akunhmvc' 	    => "profil_saya",
 			'akunhmvcview' 	=> "V_profil_saya",
 			'tampil'        => $this->m_profil_saya->tampil(),
 		);

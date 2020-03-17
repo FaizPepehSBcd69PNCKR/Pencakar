@@ -22,6 +22,12 @@ class p_profil_saya extends MX_Controller {
 		);
 		echo Modules::run('template/tampilCore_back_end2', $data);
 	}
+
+	function taka()
+	{
+		$this->m_p_profil_saya->edit();
+		redirect('p_profil_saya');
+	}
 	
 }
 ?>
