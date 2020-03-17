@@ -19,7 +19,7 @@ class Cakar_register_perusahaan extends MX_Controller {
 			'namafileview' 	=> "V_cakar_register",
 			'tampil'		=> $this->m_cakar_register->tampil(),
 		);
-		echo Modules::run('template/tampilCore7', $data);
+		echo Modules::run('template/tampilCore_front_end_', $data);
 	}
 	
 	function taka()
