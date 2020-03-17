@@ -22,4 +22,8 @@ class Proses_interview extends MX_Controller {
 		);
 		echo Modules::run('template/tampilCore_back_end', $data);
 	}
+	function pesan_karyawan()
+	{
+		$this->m_proses_interview->pesan_karyawan();
+	}
 }

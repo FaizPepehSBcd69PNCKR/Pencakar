@@ -227,7 +227,7 @@
 						<div class="col-md-12">
 							<div class="form-group">
 								<label>Non formal</label>
-								<textarea style="height:100px;" class="form-control" placeholder="Personal "></textarea>
+								<input style="height:100px;" class="form-control" placeholder="Personal " name="jenjang5">
 							</div>
 						</div>
 					</div>

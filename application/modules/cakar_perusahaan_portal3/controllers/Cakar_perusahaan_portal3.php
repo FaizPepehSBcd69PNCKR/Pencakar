@@ -8,7 +8,6 @@ class Cakar_perusahaan_portal3 extends MX_Controller {
 		parent::__construct();
 		// model
 		 $this->load->model('m_cakar_perusahaan');
-		 $this->load->model('login/m_session');
 	}
 
 	

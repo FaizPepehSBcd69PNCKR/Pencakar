@@ -91,6 +91,7 @@ class M_cv_karyawan extends CI_Model {
 					$jenjang3 			= $this->input->post('jenjang3');
 					$jenjang4 			= $this->input->post('jenjang4');
 					$gelar 				= $this->input->post('gelar');
+					$jenjang5			= $this->input->post('jenjang5');
 
 					$data1 = array(
 						'jenjang' 			=> $jenjang1,
@@ -116,6 +117,12 @@ class M_cv_karyawan extends CI_Model {
 							);
 
 					$this->db->insert('pendidikan', $data4);
+
+					$data5 = array(
+						'jenjang' 			=> $jenjang5,
+							);
+
+					$this->db->insert('pendidikan', $data5);
 
 
 
