@@ -9,7 +9,7 @@ class Template extends MX_Controller {
 		//load model
 
 		$this->load->model('m_template');
-		$this->load->model('login/m_session');
+		
 	}
 
 	
@@ -18,7 +18,7 @@ class Template extends MX_Controller {
 	public function index()
 	{
 		
-		$this->load->view('view_template_core');
+		$this->load->view('view_template_login');
 	}
 
 	public function tampilCore_front_end($data)
@@ -51,69 +51,12 @@ class Template extends MX_Controller {
 		
 		$this->load->view('view_template_back_end_perusahaan',$data);
 	}
-	public function tampilCore_login($data)
+	
+	public function view_template_login_register($data)
 	{
 		$id = $this->session->userdata('session_id');
 		
-		$this->load->view('view_template_login',$data);
+		$this->load->view('view_template_core_login_register',$data);
 	}
-
-	public function tampil_view_template_core($data)
-	{
-		$id = $this->session->userdata('session_id');
-		
-		$this->load->view('view_template_core',$data);
-	}
-
-	public function tampil_view_template_core6($data)
-	{
-		$id = $this->session->userdata('session_id');
-		
-		$this->load->view('view_template_core6',$data);
-	}
-
-	public function tampil_view_template_core7($data)
-	{
-		$id = $this->session->userdata('session_id');
-		
-		$this->load->view('view_template_core7',$data);
-	}
-
-	public function tampil_view_template_core5($data)
-	{
-		$id = $this->session->userdata('session_id');
-		
-		$this->load->view('view_template_core5',$data);
-	}
-
-	public function tampil_view_template_core4($data)
-	{
-		$id = $this->session->userdata('session_id');
-		
-		$this->load->view('view_template_core4',$data);
-	}
-	public function tampil_view_template_core3($data)
-	{
-		$id = $this->session->userdata('session_id');
-		
-		$this->load->view('view_template_core3',$data);
-	}
-
-	public function tampil_view_template_core2($data)
-	{
-		$id = $this->session->userdata('session_id');
-		
-		$this->load->view('view_template_core2',$data);
-	}
-
-	public function tampil_view_template_core($data)
-	{
-		$id = $this->session->userdata('session_id');
-		
-		$this->load->view('view_template_core',$data);
-	}
-
-
-
 
 }

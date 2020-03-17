@@ -150,8 +150,9 @@
 
 
 	<?php
-          $this->load->view($namamodule .'/'.$namafileview);
-        ?>
+                                  $this->load->view($cakarhmvc .'/'.$cakarhmvcview);
+                                ?>
+
 
 	<footer class="plus_border">
 		<div class="container margin_60_35">
