@@ -1,9 +1,15 @@
+<div class="content-wrapper">
+    <div class="container-fluid">
 <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="#">Dashboard</a>
         </li>
         <li class="breadcrumb-item active">Akun saya</li>
       </ol>
+      <?php
+    foreach ($tampil as $aku) {
+        $id = $aku->id_rl_perusahaan;
+?>
 		<div class="box_general padding_bottom">
 			<div class="header_box version_2">
 				<h2><i class="fa fa-user"></i>Akun saya</h2>
@@ -22,7 +28,7 @@
 						<div class="col-md-6">
 							<div class="form-group">
 								<label>Nama Perusahaan</label>
-								<input type="text" disabled="disabled" class="form-control" placeholder="SMK AL-AZHAR">
+								<input type="text" disabled="disabled" value="<?php echo $aku->nama_perusahaan ?>" class="form-control">
 							</div>
 						</div>
 						<div class="col-md-6">
@@ -45,7 +51,7 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="form-group">
-								<label>Alamat lengkap</label>
+								<label>Alamat lengkap perusahaan</label>
 								<textarea style="height:100px;" disabled="disabled" class="form-control" placeholder="Sempu - banyuwangi - Jawa_timur - Indonesia"></textarea>
 							</div>
 						</div>
@@ -55,7 +61,7 @@
 			</div>
 		</div>
 		<!-- /box_general-->
-	<!-- 	<div class="row">
+		<!-- <div class="row">
 			<div class="col-md-6">
 				<div class="box_general padding_bottom">
 					<div class="header_box version_2">
@@ -98,3 +104,6 @@
 		<!-- /row-->
 		<p style="text-align: center;"><a href="listings.html" class="btn_1 medium">Edit</a></p>
 	  </div>
+	</div>
+</div>
+<?php } ?>
