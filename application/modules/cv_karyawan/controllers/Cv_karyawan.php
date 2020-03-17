@@ -23,7 +23,8 @@ class Cv_karyawan extends MX_Controller {
 	}
 	function tambah(){
 		$this->m_cv_karyawan->tambahh();
-		// redirect('Cv_karyawan');
+		redirect('cv_karyawan');
 			}
 }
 
+}
