@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Cakar_register extends MX_Controller {
+class Cakar_register_perusahaan extends MX_Controller {
 
 	function __construct()
 	{
