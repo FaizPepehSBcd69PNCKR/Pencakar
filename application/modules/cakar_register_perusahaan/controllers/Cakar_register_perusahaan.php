@@ -22,10 +22,10 @@ class Cakar_register_perusahaan extends MX_Controller {
 		echo Modules::run('template/view_template_login_register', $data);
 	}
 	
-	function taka()
+	function taka12()
 	{
-		$this->m_cakar_register_perusahaan->register_karyawan();
-		redirect('cakar_login');
+		$this->m_cakar_register_perusahaan->register_perusahaan();
+		redirect('cakar_login_perusahaan');
 		
 	}
 
