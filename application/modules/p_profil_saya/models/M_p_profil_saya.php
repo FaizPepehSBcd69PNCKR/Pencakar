@@ -28,7 +28,6 @@ class M_p_profil_saya extends CI_Model {
 		$config['max_width']		= 4300;
 		$config['max_height']		= 4300;
 		$config['file_name'] 		= $nmfile1;
-		var_dump($nmfile1);
 		
 		
 			$this->upload->initialize($config);
