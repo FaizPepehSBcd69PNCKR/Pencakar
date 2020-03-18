@@ -77,7 +77,7 @@
               <span aria-hidden="true">×</span>
             </button>
           </div>
-           <form method="post" action="<?php echo base_url().'profil_saya/edit'; ?>">
+            <?= form_open_multipart('profil_saya/edit');  ?>
             <input type="hidden" name="id_rl_karyawan" value="<?php echo $aku->id_rl_karyawan ?>">
             <input type="hidden" name="id_cv" value="<?php echo $aku->id_cv ?>">
 
@@ -89,7 +89,7 @@
                 <div class="col-md-4">
                     <div class="form-group"><br>
                     <label>Foto</label><br><br>
-                         <input type="file" name="">
+                         <input type="file" name="foto">
                     </div>
                 </div>
                 <div class="col-md-8 add_top_30">
@@ -102,7 +102,7 @@
                         </div>
                     <div class="col-md-6">
               <div class="form-group">
-                <label>Nomer Telepon</label>
+                <label>Nomer Telepon</label>f
                 <input type="text" value="<?php echo $aku->nomor_telepon ?>" name="nomor_telepon" class="form-control" >
               </div>
             </div>
@@ -128,7 +128,8 @@
                 </div>
               </div>
             </div><br><br>
-            <div class="row">
+  </div>
+   <div class="row">
       <div class="col-md-6">
         <div class="box_general padding_bottom">
           <div class="header_box version_2">
@@ -168,12 +169,11 @@
         </div>
       </div>
     </div>
-  </div>
         <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
             <button class="btn btn-primary">Simpan</button>
           </div>
-      </form>
+      <?= form_close();  ?>
     </div>
   </div>
 </div>

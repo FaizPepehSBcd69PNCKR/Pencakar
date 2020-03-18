@@ -26,7 +26,7 @@ class p_profil_saya extends MX_Controller {
 	function taka()
 	{
 		$this->m_p_profil_saya->edit();
-		redirect('p_profil_saya');
+		// redirect('p_profil_saya');
 	}
 	
 }

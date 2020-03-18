@@ -24,19 +24,50 @@ class M_profil_saya extends CI_Model {
 		$email    		= $this->input->post('email');
 		$tentang_saya	= $this->input->post('tentang_saya');
 
-		// edit username
-		$data   = array('nama_lengkap' 			=> $nama,
+			//edit foto
+		$this->load->library('upload');
+		$nmfile1 = "file_".time();
+		$config['upload_path']		= 'assets/cakar/foto34';
+		$config['allowed_types']	= 'gif|jpg|png|jpeg';
+		$config['max_size']			= 5120;
+		$config['max_width']		= 4300;
+		$config['max_height']		= 4300;
+		$config['file_name'] 		= $nmfile1;
+		
+				$this->upload->initialize($config);
+
+           		//edit foto 3x4
+            	if($_FILES['foto']['name'])
+        		{
+				$this->upload->do_upload('foto');
+				$gbr1 = $this->upload->data();
+
+				// edit cv
+				$data2 = array(
+						'email' 			=> $email,
+		 				'tentang_saya' 		=> $tentang_saya,
+		 				'foto_3x4' 			=> $gbr1['file_name'],
+		  				);
+
+				$this->db->where('id_cv',$id2)->update('cv',$data2);
+
+			}else{
+
+				$data2  = array(
+					'email' 				=> $email,
+		 			'tentang_saya' 			=> $tentang_saya,
+		 		);
+
+		 	$this->db->where('id_cv',$id2)->update('cv',$data2);
+
+			}
+
+			// edit username
+			$data   = array('nama_lengkap' 			=> $nama,
 		 				'nomor_telepon' 		=> $nomor_telepon,
 		  			);
 
-		$this->db->where('id_rl_karyawan',$id)->update('rl_karyawan',$data);
-
-		// edit cv
-		$data2   = array('email' 			=> $email,
-		 				'tentang_saya' 		=> $tentang_saya,
-		  			);
-
-		$this->db->where('id_cv',$id2)->update('cv',$data2);
+			$this->db->where('id_rl_karyawan',$id)->update('rl_karyawan',$data);
 
 		
 	}
