@@ -20,7 +20,7 @@ class profil_saya extends MX_Controller {
 			'akunhmvcview' 	    => "V_profil_saya",
 			'tampil'        	=> $this->m_profil_saya->tampil(),
 		);
-		echo Modules::run('template/tampilCore_back_end2', $data);
+		echo Modules::run('template/tampilCore_back_end', $data);
 	}
 
 	function edit()

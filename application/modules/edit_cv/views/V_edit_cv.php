@@ -110,19 +110,19 @@
         <div class="col-md-4">
           <div class="form-group">
             <label>Foto 3x4</label><br>
-            <img  src="<?= base_url(); ?>assets/cakar/img/<?= $key->foto_3x4 ?>" width="120px" height="150px" >
+            <img  src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->foto_3x4 ?>" width="120px" height="150px" >
           </div>
         </div>
          <div class="col-md-4">
           <div class="form-group">
             <label>Foto ijazah</label><br>
-            <img  src="<?= base_url(); ?>assets/cakar/img/<?= $key->foto_ijazah ?>" width="120px" height="150px">
+            <img  src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->foto_ijazah ?>" width="120px" height="150px">
           </div>
         </div>
          <div class="col-md-4">
           <div class="form-group">
             <label>Foto KTP</label><br>
-            <img  src="<?= base_url(); ?>assets/cakar/img/<?= $key->foto_ktp ?>" width="250px" height="150px">
+            <img  src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->foto_ktp ?>" width="250px" height="150px">
           </div>
         </div>
       </div>
@@ -216,6 +216,9 @@
     
     <?= form_open_multipart('edit_cv/edit');  ?>
     <input type="hidden" name="id_cv" value="<?php echo $key->id_cv ?>">
+    <input type="hidden" name="id_rl_karyawan" value="<?php echo $key->id_rl_karyawan ?>">
+    <input type="hidden" name="id_alamat" value="<?php echo $key->id_alamat ?>">
+    <input type="hidden" name="id_pengalaman_kerja" value="<?php echo $key->id_pengalaman_kerja ?>">
      <div class="modal fade" id="edit_biodata" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog  modal-lg" role="document">
         <div class="modal-content">
@@ -357,15 +360,15 @@
       <div class="row">
         <div class="col-md-4 ">
             <label for="" class="control-label"></label>
-            <img src="<?= base_url(); ?>assets/cakar/img/<?= $key->foto_3x4 ?>" width="100" height="120" />
+            <img src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->foto_3x4 ?>" width="100" height="120" />
         </div>
         <div class="col-md-4 ">
             <label for="" class="control-label"></label>
-            <img  src="<?= base_url(); ?>assets/cakar/img/<?= $key->foto_ijazah ?>" width="80" height="120" />
+            <img  src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->foto_ijazah ?>" width="80" height="120" />
         </div>
         <div class="col-md-4 ">
             <label for="" class="control-label"></label>
-            <img src="<?= base_url(); ?>assets/cakar/img/<?= $key->foto_ktp ?>" width="200" height="120" />
+            <img src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->foto_ktp ?>" width="200" height="120" />
         </div>
       </div>
     </form>
@@ -380,13 +383,13 @@
     <div class="col-md-6">
       <div class="form-group">
         <label>Nama Jalan</label>
-        <input type="text" value="<?php echo $key->nama_jalan ?>" class="form-control">
+        <input type="text" name="nama_jalan" value="<?php echo $key->nama_jalan ?>" class="form-control">
       </div>
     </div>
      <div class="col-md-6">
       <div class="form-group">
         <label>RT / RW</label>
-        <input type="text" value="<?php echo $key->rt_rw ?>" class="form-control">
+        <input type="text" name="rt_rw" value="<?php echo $key->rt_rw ?>" class="form-control">
       </div>
     </div>
   </div>
@@ -395,13 +398,13 @@
     <div class="col-md-6">
       <div class="form-group">
         <label>Desa / Kelurahan</label>
-        <input type="text" value="<?php echo $key->desa_kelurahan ?>" class="form-control">
+        <input type="text" name="desa_kelurahan" value="<?php echo $key->desa_kelurahan ?>" class="form-control">
       </div>
     </div>
     <div class="col-md-6">
       <div class="form-group">
         <label>Kecamatan</label>
-        <input type="text" value="<?php echo $key->kecamatan ?>" class="form-control">
+        <input type="text" name="kecamatan" value="<?php echo $key->kecamatan ?>" class="form-control">
       </div>
     </div>
   </div>
@@ -409,13 +412,13 @@
     <div class="col-md-6">
       <div class="form-group">
         <label>Kota / Kabupaten</label>
-        <input type="text" value="<?php echo $key->kota_kabupaten ?>" class="form-control">
+        <input type="text" name="kota_kabupaten" value="<?php echo $key->kota_kabupaten ?>" class="form-control">
       </div>
     </div>
     <div class="col-md-6">
       <div class="form-group">
         <label>Provinsi</label>
-        <input type="text" value="<?php echo $key->provinsi ?>" class="form-control">
+        <input type="text" name="provinsi" value="<?php echo $key->provinsi ?>" class="form-control">
       </div>
     </div>
   </div>
@@ -468,19 +471,19 @@
      <div class="col-md-4">
       <div class="form-group">
         <label>Pernah bekerja di</label>
-        <input type="text" value="<?php echo $key->nama_perusahaan ?>" class="form-control">
+        <input type="text" name="nama_perusahaan" value="<?php echo $key->nama_perusahaan ?>" class="form-control">
       </div>
     </div>
     <div class="col-md-4">
       <div class="form-group">
         <label>Lama bekerja</label>
-        <input type="text" value="<?php echo $key->lama_kerja ?>" class="form-control">
+        <input type="text" name="lama_kerja" value="<?php echo $key->lama_kerja ?>" class="form-control">
       </div>
     </div>
     <div class="col-md-4">
       <div class="form-group">
         <label>Jabatan</label>
-        <input type="text" value="<?php echo $key->posisi ?>" class="form-control">
+        <input type="text" name="posisi" value="<?php echo $key->posisi ?>" class="form-control">
       </div>
     </div>
   </div>

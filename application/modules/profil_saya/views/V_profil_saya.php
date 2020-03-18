@@ -21,7 +21,7 @@
         <div class="col-md-4">
           <div class="form-group"><br>
           <label>Foto</label><br><br>
-            <img src="img/avatar5.jpg" width="200" height="200">
+            <img  src="<?= base_url(); ?>assets/cakar/foto34/<?= $aku->foto_3x4 ?>" width="200" height="200">
             </div>
         </div>
         <div class="col-md-8 add_top_30">
@@ -44,7 +44,7 @@
             <div class="col-md-6">
               <div class="form-group">
                 <label>Email</label>
-                <input type="emil" disabled="disabled" class="form-control">
+                <input type="email" disabled="disabled" class="form-control" value="<?php echo $aku->email ?>">
               </div>
             </div>
           </div>
@@ -52,8 +52,8 @@
           <div class="row">
             <div class="col-md-12">
               <div class="form-group">
-                <label>Personal info</label>
-                <textarea style="height:100px;" class="form-control"></textarea>
+                <label>Tentang saya</label>
+                <input type="text" disabled="disabled" style="height:100px;" class="form-control" value="<?php echo $aku->tentang_saya ?>">
               </div>
             </div>
           </div>
@@ -78,13 +78,14 @@
             </button>
           </div>
            <form method="post" action="<?php echo base_url().'profil_saya/edit'; ?>">
+            <input type="hidden" name="id_rl_karyawan" value="<?php echo $aku->id_rl_karyawan ?>">
+            <input type="hidden" name="id_cv" value="<?php echo $aku->id_cv ?>">
 
            <div class="modal-body">              
                           <div class="panel-body">
  
 
        <div class="row">
-        <input type="hidden" name="id_rl_karyawan" value="<?php echo $aku->id_rl_karyawan ?>">
                 <div class="col-md-4">
                     <div class="form-group"><br>
                     <label>Foto</label><br><br>
@@ -111,10 +112,18 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Email</label>
-                                <input type="text" class="form-control">
+                                <input type="text" name="email" class="form-control" value="<?php echo $aku->email ?>">
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Tentang saya</label>
+                <input type="text" name="tentang_saya" class="form-control" value="<?php echo $aku->tentang_saya ?>">
+              </div>
+            </div>
+          </div>
                  
                 </div>
               </div>
