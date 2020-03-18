@@ -10,7 +10,7 @@
 <body id="login_bg">
 	
 	<nav id="menu" class="fake_menu"></nav>
-		<form method="post" action="<?php echo base_url().'cakar_login/aksi_login'; ?>">
+		<form method="post" action="<?php echo base_url().'cakar_login_perusahaan/aksi_login'; ?>">
 	<div id="login">
 		<aside>
 			<figure>

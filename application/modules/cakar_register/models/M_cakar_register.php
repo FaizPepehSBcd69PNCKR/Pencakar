@@ -9,9 +9,9 @@ class M_cakar_register extends CI_Model {
 	}
 
 	function register_karyawan(){
-		$nama_lengkap=$this->input->post('nama_lengkap');
-		$kata_sandi=$this->input->post('kata_sandi');
-		$nomor_telepon=$this->input->post('nomor_telepon');
+		$nama_lengkap	=$this->input->post('nama_lengkap');
+		$kata_sandi		=$this->input->post('kata_sandi');
+		$nomor_telepon	=$this->input->post('nomor_telepon');
 		$status='karyawan';
 		$user = array('nama_lengkap'	 	=>$nama_lengkap,
 					  'kata_sandi'			=>$kata_sandi,

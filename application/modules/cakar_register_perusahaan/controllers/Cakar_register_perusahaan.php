@@ -7,7 +7,7 @@ class Cakar_register_perusahaan extends MX_Controller {
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('m_cakar_register');
+		 $this->load->model('m_cakar_register_perusahaan');
 		
 
 	}
@@ -15,17 +15,17 @@ class Cakar_register_perusahaan extends MX_Controller {
 	function index()
 	{
 		$data = array(
-			'namamodule' 	=> "cakar_register",
-			'namafileview' 	=> "V_cakar_register",
-			'tampil'		=> $this->m_cakar_register->tampil(),
+			'cakarhmvc'		 	=> "Cakar_register_perusahaan",
+			'cakarhmvcview' 	=> "V_cakar_register_perusahaan",
+			'tampil'			=> $this->m_cakar_register_perusahaan->tampil(),
 		);
-		echo Modules::run('template/tampilCore_front_end_', $data);
+		echo Modules::run('template/view_template_login_register', $data);
 	}
 	
-	function taka()
+	function taka12()
 	{
-		$this->m_cakar_register->register_karyawan();
-		redirect('cakar_login');
+		$this->m_cakar_register_perusahaan->register_perusahaan();
+		redirect('cakar_login_perusahaan');
 		
 	}
 
