@@ -10,15 +10,17 @@ class M_cakar_register_perusahaan extends CI_Model {
 
 	function register_perusahaan(){
 		$nama_perusahaan=$this->input->post('nama_perusahaan');
-		$email_perusahaan=$this->input->post('katasandi_perusahaan');
+		$email_perusahaan=$this->input->post('email_perusahaan');
 		$telepon_perusahaan=$this->input->post('telepon_perusahaan');
 		$katasandi_perusahaan=$this->input->post('katasandi_perusahaan');
+		$keterangan_perusahaan=$this->input->post('keterangan_perusahaan');
 		$alamatlengkap_perusahaan=$this->input->post('alamatlengkap_perusahaan');
 		$status='perusahaan';
 		$user = array('nama_perusahaan'	 					=>$nama_perusahaan,
 					  'katasandi_perusahaan'				=>$katasandi_perusahaan,
 					  'telepon_perusahaan'					=>$telepon_perusahaan,
 					  'alamatlengkap_perusahaan'			=>$alamatlengkap_perusahaan,
+					  'keterangan_perusahaan'				=>$keterangan_perusahaan,
 					  'status' 	 							=>'perusahaan'
 		 );
 		
