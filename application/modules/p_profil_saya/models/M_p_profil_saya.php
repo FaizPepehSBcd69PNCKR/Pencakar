@@ -18,7 +18,7 @@ class M_p_profil_saya extends CI_Model {
 		$telepon_perusahaan	 	  = $this->input->post('telepon_perusahaan');
 		$email_perusahaan 	 	  = $this->input->post('email_perusahaan');
 		$alamatlengkap_perusahaan = $this->input->post('alamatlengkap_perusahaan');
-
+        $keterangan_perusahaan    = $this->input->post('keterangan_perusahaan');
 
 		$this->load->library('upload');
 		$nmfile1 = "file_".time();
@@ -43,6 +43,7 @@ class M_p_profil_saya extends CI_Model {
 					'telepon_perusahaan'		=> $telepon_perusahaan,
 					'email_perusahaan'		    => $email_perusahaan,
 					'alamatlengkap_perusahaan'  => $alamatlengkap_perusahaan,
+					'keterangan_perusahaan'     => $keterangan_perusahaan,
 					'logo_perusahaan' 			=> $gbr1['file_name'],
 					
 				);
@@ -54,6 +55,7 @@ class M_p_profil_saya extends CI_Model {
 					'telepon_perusahaan'		=> $telepon_perusahaan,
 					'email_perusahaan'		    => $email_perusahaan,
 					'alamatlengkap_perusahaan'	=> $alamatlengkap_perusahaan,
+					'keterangan_perusahaan'     => $keterangan_perusahaan,
 				);
 			$this->db->where('id_rl_perusahaan',$id)->update('rl_perusahaan',$data);
 		}
