@@ -11,31 +11,31 @@
 							
 				<div class="form-group">
 					<label>Nama perusahaan</label>
-					<input class="form-control" type="text" name="nama_perusahaan" placeholder="Nama Perusahaan Anda">
+					<input class="form-control" type="text" name="nama_perusahaan" placeholder="Nama Perusahaan">
 					<i class="ti-user"></i>
 				</div>
 				<div class="form-group">
 					<label>Email perusahaan</label>
-					<input class="form-control" type="email" placeholder="Email Perusahaan Anda" name="email_perusahaan">
+					<input class="form-control" type="email" placeholder="Email Perusahaan" name="email_perusahaan">
 					<i class="icon_mail_alt"></i>
 				</div>
 				<div class="form-group">
 					<label>Telepon perusahaan</label>
-					<input class="form-control" type="text" placeholder="Nomor Telepon Perusahaan Anda " name="telepon_perusahaan">
+					<input class="form-control" type="text" placeholder="Nomor Telepon Perusahaan" name="telepon_perusahaan">
 					<i class="pe-7s-call"></i>
 				</div>
 				<div class="form-group">
 					<label>Kata sandi</label>
-					<input class="form-control" type="password" placeholder="Password Anda" name="katasandi_perusahaan">
+					<input class="form-control" type="password" placeholder="Password" name="katasandi_perusahaan">
 					<i class="icon_lock_alt"></i>
 				</div>
 				<div class="form-group">
 					<label>Alamat lengkap perusahaan</label>
-					<textarea style="height:100px;" class="form-control" placeholder="Masukkan Alamat Lengkap Perusahaan Anda" name="alamatlengkap_perusahaan"></textarea>
+					<textarea style="height:100px;" class="form-control" placeholder="Alamat Lengkap Perusahaan" name="alamatlengkap_perusahaan"></textarea>
 				</div>
 				<div class="form-group">
 					<label>Keterangan Perusahaan</label>
-					<textarea style="height:100px;" class="form-control" placeholder="Masukkan keterangan Perusahaan Anda" name="keterangan_perusahaan"></textarea>
+					<textarea style="height:100px;" class="form-control" placeholder="Keterangan Perusahaan" name="keterangan_perusahaan"></textarea>
 				</div>
 				 <div class="form-group">
             <label>Logo Perusahaan</label>

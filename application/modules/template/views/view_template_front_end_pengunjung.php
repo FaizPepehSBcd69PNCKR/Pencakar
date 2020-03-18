@@ -73,7 +73,7 @@
                                 <ul>
                                     <li><span><a href="#0">Login</a></span>
                                         <ul>
-                                            <li><a href="login.html">Login Karyawan</a></li>
+                                           <li><a href="<?php echo base_url('cakar_login'); ?>">Login Perusahaan</li></a>
                                             <li><a href="login2.html">Login Perusahaan</a></li>
                                         </ul>
                                     </li>

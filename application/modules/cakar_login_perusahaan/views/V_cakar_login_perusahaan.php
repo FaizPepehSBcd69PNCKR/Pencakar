@@ -1,12 +1,3 @@
- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-
-    <!-- BASE CSS -->
-    <link href="assets/cakar/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/cakar/css/style.css" rel="stylesheet">
-	<link href="assets/cakar/css/vendors.css" rel="stylesheet">
-
-    <!-- YOUR CUSTOM CSS -->
-    <link href="css/custom.css" rel="stylesheet">
 <body id="login_bg">
 	
 	<nav id="menu" class="fake_menu"></nav>
