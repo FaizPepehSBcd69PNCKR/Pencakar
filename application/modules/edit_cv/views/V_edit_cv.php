@@ -1,6 +1,5 @@
 <?php                                    
             foreach($tampil as $key){
-              $id = $key->id_cv;
               ?>
  <!-- /Navigation-->
   
@@ -22,7 +21,7 @@
         <div class="col-md-6">
           <div class="form-group">
             <label>Nama lengkap</label>
-            <input type="text" disabled="disabled" class="form-control">
+            <input type="text" disabled="disabled" class="form-control" value="<?php echo $key->nama_lengkap ?>">
           </div>
         </div>
          <div class="col-md-6">
@@ -52,7 +51,7 @@
         <div class="col-md-12">
               <div class="form-group">
                 <label>Alamat lengkap</label>
-                <textarea style="height:100px;" disabled="disabled" class="form-control" ></textarea>
+                <input style="height:100px;" disabled="disabled" class="form-control" value="<?php echo $key->nama_jalan ?>,<?php echo $key->rt_rw ?>,<?php echo $key->desa_kelurahan ?>,<?php echo $key->kecamatan ?><?php echo $key->kota_kabupaten ?>,<?php echo $key->provinsi ?>,<?php echo $key->kodepos ?>">
               </div>
             </div>
       </div>
@@ -67,7 +66,7 @@
         <div class="col-md-4">
           <div class="form-group">
             <label>Nomor telepon</label>
-            <input type="text" disabled="disabled" class="form-control">
+            <input type="text" disabled="disabled" class="form-control" value="<?php echo $key->nomor_telepon ?>">
           </div>
         </div>
         <div class="col-md-4">
@@ -189,19 +188,19 @@
          <div class="col-md-4">
           <div class="form-group">
             <label>Pernah bekerja di</label>
-            <input type="text" disabled="disabled" class="form-control">
+            <input type="text" disabled="disabled" class="form-control" value="<?php echo $key->nama_perusahaan?>">
           </div>
         </div>
         <div class="col-md-4">
           <div class="form-group">
-            <label>Pernah bekerja di</label>
-            <input type="text" disabled="disabled" class="form-control">
+            <label>Lama Bekerja</label>
+            <input type="text" disabled="disabled" class="form-control" value="<?php echo $key->lama_kerja?>">
           </div>
         </div>
         <div class="col-md-4">
           <div class="form-group">
-            <label>Pernah bekerja di</label>
-            <input type="text" disabled="disabled" class="form-control">
+            <label>Jabatan</label>
+            <input type="text" disabled="disabled" class="form-control" value="<?php echo $key->posisi?>">
           </div>
         </div>
         
@@ -233,7 +232,7 @@
     <div class="col-md-6">
       <div class="form-group">
         <label>Nama lengkap</label>
-        <input type="text" value="" class="form-control">
+        <input type="text" name="nama_lengkap" class="form-control" value="<?php echo $key->nama_lengkap ?>">
       </div>
     </div>
      <div class="col-md-6">
@@ -288,7 +287,7 @@
     <div class="col-md-4">
       <div class="form-group">
         <label>Nomor telepon</label>
-        <input type="text" value="" class="form-control">
+        <input type="text" name="nomor_telepon" value="<?php echo $key->nomor_telepon ?>" class="form-control">
       </div>
     </div>
     <div class="col-md-4">
@@ -380,14 +379,14 @@
   <div class="row">
     <div class="col-md-6">
       <div class="form-group">
-        <label>RT / RW</label>
-        <input type="text" value="" class="form-control">
+        <label>Nama Jalan</label>
+        <input type="text" value="<?php echo $key->nama_jalan ?>" class="form-control">
       </div>
     </div>
      <div class="col-md-6">
       <div class="form-group">
-        <label>Desa / Kelurahan</label>
-        <input type="text" value="" class="form-control">
+        <label>RT / RW</label>
+        <input type="text" value="<?php echo $key->rt_rw ?>" class="form-control">
       </div>
     </div>
   </div>
@@ -395,14 +394,28 @@
   <div class="row">
     <div class="col-md-6">
       <div class="form-group">
+        <label>Desa / Kelurahan</label>
+        <input type="text" value="<?php echo $key->desa_kelurahan ?>" class="form-control">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Kecamatan</label>
+        <input type="text" value="<?php echo $key->kecamatan ?>" class="form-control">
+      </div>
+    </div>
+  </div>
+   <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
         <label>Kota / Kabupaten</label>
-        <input type="text" value="" class="form-control">
+        <input type="text" value="<?php echo $key->kota_kabupaten ?>" class="form-control">
       </div>
     </div>
     <div class="col-md-6">
       <div class="form-group">
         <label>Provinsi</label>
-        <input type="text" value="" class="form-control">
+        <input type="text" value="<?php echo $key->provinsi ?>" class="form-control">
       </div>
     </div>
   </div>
@@ -455,19 +468,19 @@
      <div class="col-md-4">
       <div class="form-group">
         <label>Pernah bekerja di</label>
-        <input type="text" value="" class="form-control">
+        <input type="text" value="<?php echo $key->nama_perusahaan ?>" class="form-control">
       </div>
     </div>
     <div class="col-md-4">
       <div class="form-group">
-        <label>Pernah bekerja di</label>
-        <input type="text" value="" class="form-control">
+        <label>Lama bekerja</label>
+        <input type="text" value="<?php echo $key->lama_kerja ?>" class="form-control">
       </div>
     </div>
     <div class="col-md-4">
       <div class="form-group">
-        <label>Pernah bekerja di</label>
-        <input type="text" value="" class="form-control">
+        <label>Jabatan</label>
+        <input type="text" value="<?php echo $key->posisi ?>" class="form-control">
       </div>
     </div>
   </div>

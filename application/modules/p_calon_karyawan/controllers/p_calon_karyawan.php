@@ -19,25 +19,11 @@ class p_calon_karyawan extends MX_Controller {
 			'akunhmvcview' 	=> "V_p_calon_karyawan",
 			'tampil'        => $this->m_p_calon_karyawan->tampil(),
 		);
-		echo Modules::run('template/tampilCore_back_end', $data);
+		echo Modules::run('template/tampilCore_back_end2', $data);
+	}
+	function pesan_karyawan()
+	{
+		$this->m_proses_interview->pesan_karyawan();
 	}
 	
-	function tambah()
-	{
-		$this->m_data_guru->tambah();
-		redirect('p_calon_karyawan');
-	}
-
-	function edit()
-	{
-		$this->m_data_guru->edit();
-		redirect('p_calon_karyawan');
-	}
-
-	function hapus($id)
-	{
-		$this->m_data_guru->hapus($id);
-		redirect('p_calon_karyawan');
-	}
 }
-?>

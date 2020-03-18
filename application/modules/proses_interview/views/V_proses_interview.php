@@ -12,6 +12,9 @@
       <div class="header_box">
         <h2 class="d-inline-block"><i class="icon-wheelchair"></i> &nbsp;Interview karyawan</h2>
       </div>
+      <?php foreach ($tampil as $key) {
+        $id = $key
+       ?>
       <div class="row">
       <div class="col-md-12">
       <div class="list_general">
@@ -21,8 +24,8 @@
             <figure><img src="img/logohummasoft.png" alt="kosong" class="rounded-circle" width="100" height="100" alt=""></figure>
             <h4>Perusahaan &nbsp;</h4>
             <ul class="booking_list">
-              <li><strong>Nama Perusahan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</strong><b>CV Hummasoft</b></li>
-              <li><strong>Alamat Perusahaan&nbsp;:</strong><b> Perum Permata Regency 1 Blok 10/28, Perun Gpa, Ngijo, Kec. Karang Ploso, Malang, Jawa Timur 65152</b></li>
+              <li><strong>Nama Perusahan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</strong><b><?php echo $key->nama_perusahaan ?></b></li>
+              <li><strong>Alamat Perusahaan&nbsp;:</strong><b><?php echo $key->alamatlengkap_perusahaan ?></b></li>
             </ul>
             <div class="row">
             <p> <a href="#0" class="btn_1 gray" class="nav-link" data-toggle="modal" data-target="#pesan_karyawan" style="margin-left: 0%;"><i class="fa fa-fw fa-envelope"></i> Kirim pesan</a></p> &nbsp; &nbsp; &nbsp;
@@ -33,6 +36,7 @@
         </div>
         </div>
       </div>
+    <?php } ?>
     
     <!-- /pagination-->
     </div>
@@ -52,6 +56,7 @@
       <i class="fa fa-angle-up"></i>
     </a>
     <!-- Logout Modal-->
+    <form action="<?php echo base_url().'proses_interview/pesan_karyawan' ?>" method="post">
      <div class="modal fade" id="pesan_karyawan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -62,16 +67,17 @@
             </button>
           </div>
           <div class="modal-body">
-                            <form class="form-horizontal">
                           <div class="panel-body">
-                              <textarea placeholder="ketik pesan . . . " rows="5" class="form-control"></textarea>
+                              <input type="text" name="isi_pesan" class="form-control">
                           </div>
-                        </form>
           </div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-            <a class="btn btn-primary" href="Bookings_2.html">Kirim</a>
+            <button class="btn btn-primary">Kirim</button>
           </div>
         </div>
+      </div>
+    </div>
+      </form>
       </div>
     </div>

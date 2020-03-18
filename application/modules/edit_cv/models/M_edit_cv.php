@@ -5,7 +5,14 @@ class M_edit_cv extends CI_Model {
 
 	function tampil()
 	{
-		return $this->db->get('cv')->result();
+		$this->db->select('*');
+		$this->db->from('cv');
+		$this->db->join('rl_karyawan','rl_karyawan.id_rl_karyawan=cv.id_rl_karyawan');
+		$this->db->join('alamat','alamat.id_cv=cv.id_cv');
+		$this->db->join('pendidikan','pendidikan.id_cv=cv.id_cv');
+		$this->db->join('pengalaman_kerja','pengalaman_kerja.id_cv=cv.id_cv');
+		$query = $this->db->get();
+		return $query->result();
 	}
 
 	function edit()
@@ -21,7 +28,6 @@ class M_edit_cv extends CI_Model {
 		$status				= $this->input->post('status');
 		$keahlian			= $this->input->post('keahlian');
 		$tentang_saya		= $this->input->post('tentang_saya');
-
 
 		$this->load->library('upload');
 		$nmfile1 = "file_".time();

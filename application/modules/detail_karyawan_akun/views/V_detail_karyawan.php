@@ -21,7 +21,7 @@
         <div class="col-md-6">
           <div class="form-group">
             <label>Nama lengkap</label>
-            <input type="text" disabled="disabled" class="form-control">
+            <input type="text" disabled="disabled" class="form-control" value="<?php echo $key->nama_lengkap ?>">
           </div>
         </div>
          <div class="col-md-6">
@@ -51,7 +51,7 @@
         <div class="col-md-12">
               <div class="form-group">
                 <label>Alamat lengkap</label>
-                <textarea style="height:100px;" disabled="disabled" class="form-control" ></textarea>
+               <input style="height:100px;" disabled="disabled" class="form-control" value="<?php echo $key->nama_jalan ?>,<?php echo $key->rt_rw ?>,<?php echo $key->desa_kelurahan ?>,<?php echo $key->kecamatan ?><?php echo $key->kota_kabupaten ?>,<?php echo $key->provinsi ?>,<?php echo $key->kodepos ?>">
               </div>
             </div>
       </div>
@@ -66,7 +66,7 @@
         <div class="col-md-4">
           <div class="form-group">
             <label>Nomor telepon</label>
-            <input type="text" disabled="disabled" class="form-control" placeholder="082332271835">
+            <input type="text" disabled="disabled" class="form-control"  value="<?php echo $key->nomor_telepon ?>">
           </div>
         </div>
         <div class="col-md-4">
@@ -139,13 +139,13 @@
          <div class="col-md-6">
           <div class="form-group">
             <label>SD/MI</label>
-            <input type="text" disabled="disabled" class="form-control" placeholder="SDN SEMPUH 4 BANYUWANGI">
+            <input type="text" disabled="disabled" class="form-control">
           </div>
         </div>
         <div class="col-md-6">
           <div class="form-group">
             <label>SLTP</label>
-            <input type="text" disabled="disabled" class="form-control" placeholder="SMPN 4 SEMPUH">
+            <input type="text" disabled="disabled" class="form-control">
           </div>
         </div>
       </div>
@@ -154,17 +154,17 @@
         <div class="col-md-6">
           <div class="form-group">
             <label>SLTA</label>
-            <input type="text" disabled="disabled" class="form-control" placeholder="SMK AL - AZHAR">
+            <input type="text" disabled="disabled" class="form-control">
           </div>
         </div>
         <div class="col-md-6">
           <div class="form-group">
             <label>Universitas</label>
-            <input type="text"disabled="disabled"  class="form-control" placeholder="Universitas Brawijaya">
+            <input type="text"disabled="disabled"  class="form-control">
           </div>
         </div>
         <h5> &nbsp;&nbsp;&nbsp;Non formal</h5>
-        <textarea style="height:100px;" disabled="disabled" class="form-control" placeholder="Pondok Pesantren Al-Azhar Sempuh Banyuwangi"></textarea>
+        <textarea style="height:100px;" disabled="disabled" class="form-control"></textarea>
       </div>
       <!-- /row-->
     </div>
@@ -176,19 +176,19 @@
          <div class="col-md-4">
           <div class="form-group">
             <label>Pernah bekerja di</label>
-            <input type="text" disabled="disabled" class="form-control" placeholder="Eratex Djaja">
+            <input type="text" disabled="disabled" class="form-control" value="<?php echo $key->nama_perusahaan ?>">
           </div>
         </div>
         <div class="col-md-4">
           <div class="form-group">
             <label>Pernah bekerja di</label>
-            <input type="text" disabled="disabled" class="form-control" placeholder="Gudang Garam">
+            <input type="text" disabled="disabled" class="form-control" value="<?php echo $key->lama_kerja ?>">
           </div>
         </div>
         <div class="col-md-4">
           <div class="form-group">
             <label>Pernah bekerja di</label>
-            <input type="text" disabled="disabled" class="form-control">
+            <input type="text" disabled="disabled" class="form-control" value="<?php echo $key->posisi ?>">
           </div>
         </div>
         

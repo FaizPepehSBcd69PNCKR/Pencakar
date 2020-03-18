@@ -130,10 +130,10 @@
 									
 								</figure>
 								<div class="wrapper">
-									<h3>RISKI ROMADONI</h3>
+									<h3><?php echo $key->nama_lengkap ?></h3>
 									<small></small>
 									<p><?php echo $key->keahlian ?></p>
-									<h20>Jambewangi Banyuwangi</h20>
+									<h20><?php echo $key->nama_jalan ?>,<?php echo $key->rt_rw ?>,<?php echo $key->desa_kelurahan ?>,<?php echo $key->kecamatan ?><?php echo $key->kota_kabupaten ?>,<?php echo $key->provinsi ?></h20>
 								</div>
 								 <ul>
 								 	<li>

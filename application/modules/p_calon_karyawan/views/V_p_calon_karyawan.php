@@ -23,164 +23,21 @@
             <ul>
       
                 <li>
-                    <figure><img src="img/avatar1.jpg" class="rounded-circle" width="80" height="80" alt=""></figure>
+                  <?php foreach ($tampil as $key) {
+                   ?>
+                    <figure><img src="<?= base_url(); ?>assets/cakar/img/<?= $key->foto_3x4 ?>" class="rounded-circle" width="80" height="80" alt=""></figure>
                     <h4>Calon Karyawan &nbsp;  <!-- <i class="pending">Pending</i> --></h4>
                     <ul class="booking_list">
-                        <li><strong>Nama </strong> M Nur Faiz</li>
-                        <li><strong>Keahlian</strong>IT-Perangkat Lunak</li>
+                        <li><strong>Nama </strong> <?php echo $key->nama_lengkap ?></li>
+                        <li><strong>Keahlian</strong><?php echo $key->keahlian ?></li>
                     </ul>
                       <p>
-            <a href="#0" class="btn_1 gray" class="nav-link" data-toggle="modal" data-target="#pesan_karyawan" style="margin-left: -10%;"><i class="fa fa-fw fa-envelope"></i> Kirim pesan</a>&nbsp;&nbsp;&nbsp;&nbsp;
+           <a href="#0" class="btn_1 gray" class="nav-link" data-toggle="modal" data-target="#pesan_karyawan" style="margin-left: 0%;"><i class="fa fa-fw fa-envelope"></i> Kirim pesan</a>
             <a href="#0" class="btn_1 gray approve"><i class="fa fa-fw fa-check-circle-o"></i> Rekrut</a> &nbsp;&nbsp;
             <a href="#0" class="btn_1 gray delete"><i class="fa fa-fw fa-times-circle-o"></i> Batal</a>
         </p>
                 </li>
-    </ul>
-    </div>
-  </div>
-    <div class="col-md-6">
-  <div class="list_general">
-    <ul>
-      
-      <li>
-        <figure><img src="img/avatar2.jpg" class="rounded-circle" width="80" height="80" alt=""></figure>
-        <h4>Calon Karyawan &nbsp; <!-- <i class="approved">Di Terima</i> --></h4>
-        <ul class="booking_list">
-          <li><strong>Nama </strong> M Nur Faiz</li>
-          <li><strong>Keahlian</strong>IT-Perangkat Lunak</li>
-        </ul>
-          <p>
-            <a href="#0" class="btn_1 gray" class="nav-link" data-toggle="modal" data-target="#pesan_karyawan" style="margin-left: -10%;"><i class="fa fa-fw fa-envelope"></i> Kirim pesan</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#0" class="btn_1 gray approve"><i class="fa fa-fw fa-check-circle-o"></i> Rekrut</a> &nbsp;&nbsp;
-            <a href="#0" class="btn_1 gray delete"><i class="fa fa-fw fa-times-circle-o"></i> Batal</a>
-        </p>
-      </li>
-    </ul>
-    </div>
-  </div>
-</div>
-                 <div class="row">
-  <div class="col-md-6">
-  <div class="list_general">
-    <ul>
-      
-      <li>
-        <figure><img src="img/avatar3.jpg" class="rounded-circle" width="80" height="80" alt=""></figure>
-        <h4>Calon Karyawan &nbsp; <!-- <i class="approved">Di Terima</i> --></h4>
-        <ul class="booking_list">
-          <li><strong>Nama </strong> M Nur Faiz</li>
-          <li><strong>Keahlian</strong>IT-Perangkat Lunak</li>
-        </ul>
-          <p>
-            <a href="#0" class="btn_1 gray" class="nav-link" data-toggle="modal" data-target="#pesan_karyawan" style="margin-left: -10%;"><i class="fa fa-fw fa-envelope"></i> Kirim pesan</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#0" class="btn_1 gray approve"><i class="fa fa-fw fa-check-circle-o"></i> Rekrut</a> &nbsp;&nbsp;
-            <a href="#0" class="btn_1 gray delete"><i class="fa fa-fw fa-times-circle-o"></i> Batal</a>
-        </p>
-      </li>
-    </ul>
-    </div>
-  </div>
-    <div class="col-md-6">
-  <div class="list_general">
-    <ul>
-      
-      <li>
-        <figure><img src="img/avatar4.jpg" class="rounded-circle" width="80" height="80" alt=""></figure>
-        <h4>Calon Karyawan &nbsp<!-- ;  <i class="pending">Pending</i> --></h4>
-        <ul class="booking_list">
-          <li><strong>Nama </strong> M Nur Faiz</li>
-          <li><strong>Keahlian</strong>IT-Perangkat Lunak</li>
-        </ul>
-          <p>
-            <a href="#0" class="btn_1 gray" class="nav-link" data-toggle="modal" data-target="#pesan_karyawan" style="margin-left: -10%;"><i class="fa fa-fw fa-envelope"></i> Kirim pesan</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#0" class="btn_1 gray approve"><i class="fa fa-fw fa-check-circle-o"></i> Rekrut</a> &nbsp;&nbsp;
-            <a href="#0" class="btn_1 gray delete"><i class="fa fa-fw fa-times-circle-o"></i> Batal</a>
-        </p>
-      </li>
-    </ul>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-6">
-  <div class="list_general">
-    <ul>
-      
-      <li>
-        <figure><img src="img/avatar5.jpg" class="rounded-circle" width="80" height="80" alt=""></figure>
-        <h4>Calon Karyawan &nbsp; <!-- <i class="approved">Di Terima</i> --></h4>
-        <ul class="booking_list">
-          <li><strong>Nama </strong> M Nur Faiz</li>
-          <li><strong>Keahlian</strong>IT-Perangkat Lunak</li>
-        </ul>
-          <p>
-            <a href="#0" class="btn_1 gray" class="nav-link" data-toggle="modal" data-target="#pesan_karyawan" style="margin-left: -10%;"><i class="fa fa-fw fa-envelope"></i> Kirim pesan</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#0" class="btn_1 gray approve"><i class="fa fa-fw fa-check-circle-o"></i> Rekrut</a> &nbsp;&nbsp;
-            <a href="#0" class="btn_1 gray delete"><i class="fa fa-fw fa-times-circle-o"></i> Batal</a>
-        </p>
-      </li>
-    </ul>
-    </div>
-  </div>
-    <div class="col-md-6">
-  <div class="list_general">
-    <ul>
-      
-      <li>
-        <figure><img src="img/avatar6.jpg" class="rounded-circle" width="80" height="80" alt=""></figure>
-        <h4>Calon Karyawan &nbsp<!-- ;  <i class="pending">Pending</i> --></h4>
-        <ul class="booking_list">
-          <li><strong>Nama </strong> M Nur Faiz</li>
-          <li><strong>Keahlian</strong>IT-Perangkat Lunak</li>
-        </ul>
-          <p>
-            <a href="#0" class="btn_1 gray" class="nav-link" data-toggle="modal" data-target="#pesan_karyawan" style="margin-left: -10%;"><i class="fa fa-fw fa-envelope"></i> Kirim pesan</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#0" class="btn_1 gray approve"><i class="fa fa-fw fa-check-circle-o"></i> Rekrut</a> &nbsp;&nbsp;
-            <a href="#0" class="btn_1 gray delete"><i class="fa fa-fw fa-times-circle-o"></i> Batal</a>
-        </p>
-      </li>
-    </ul>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-6">
-  <div class="list_general">
-    <ul>
-      
-      <li>
-        <figure><img src="img/course_1.jpg" class="rounded-circle" width="80" height="80" alt=""></figure>
-        <h4>Calon Karyawan &nbsp<!-- ;  <i class="pending">Pending</i> --></h4>
-        <ul class="booking_list">
-          <li><strong>Nama </strong> M Nur Faiz</li>
-          <li><strong>Keahlian</strong>IT-Perangkat Lunak</li>
-        </ul>
-          <p>
-            <a href="#0" class="btn_1 gray" class="nav-link" data-toggle="modal" data-target="#pesan_karyawan" style="margin-left: -10%;"><i class="fa fa-fw fa-envelope"></i> Kirim pesan</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#0" class="btn_1 gray approve"><i class="fa fa-fw fa-check-circle-o"></i> Rekrut</a> &nbsp;&nbsp;
-            <a href="#0" class="btn_1 gray delete"><i class="fa fa-fw fa-times-circle-o"></i> Batal</a>
-        </p>
-      </li>
-    </ul>
-    </div>
-  </div>
-    <div class="col-md-6">
-  <div class="list_general">
-    <ul>
-      
-      <li>
-        <figure><img src="img/course_2.jpg" class="rounded-circle" width="80" height="80" alt=""></figure>
-        <h4>Calon Karyawan &nbsp<!-- ;  <i class="pending">Pending</i> --></h4>
-        <ul class="booking_list">
-          <li><strong>Nama </strong> M Nur Faiz</li>
-          <li><strong>Keahlian</strong>IT-Perangkat Lunak</li>
-        </ul>
-          <p>
-            <a href="#0" class="btn_1 gray" class="nav-link" data-toggle="modal" data-target="#pesan_karyawan" style="margin-left: -10%;"><i class="fa fa-fw fa-envelope"></i> Kirim pesan</a>&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="#0" class="btn_1 gray approve"><i class="fa fa-fw fa-check-circle-o"></i> Rekrut</a> &nbsp;&nbsp;
-            <a href="#0" class="btn_1 gray delete"><i class="fa fa-fw fa-times-circle-o"></i> Batal</a>
-        </p>
-      </li>
+              <?php } ?>
     </ul>
     </div>
   </div>
@@ -201,5 +58,29 @@
             </li>
         </ul>
     </nav>
+
+     <form action="<?php echo base_url().'proses_interview/pesan_karyawan' ?>" method="post">
+     <div class="modal fade" id="pesan_karyawan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Pesan</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+                          <div class="panel-body">
+                              <input type="text" name="isi_pesan" class="form-control">
+                          </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
+            <button class="btn btn-primary">Kirim</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      </form>
   </div>
 </div>
