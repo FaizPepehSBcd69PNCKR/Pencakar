@@ -30,22 +30,8 @@ class Profil_saya extends MX_Controller {
 		redirect('edit_cv');
 	}
 
-	function edit()
-	{
-		$this->m_data_guru->edit();
-		redirect('edit_cv');
-
-			'akunhmvc' 	=> "profil_saya",
-			'akunhmvcview' 	=> "V_profil_saya",
-			'tampil'        => $this->m_profil_saya->tampil(),
-		);
-		echo Modules::run('template/tampilCore_back_end', $data);
-
-	}
-
 	function edit(){
 		$this->m_profil_saya->edit();
 	}
 	
 }
-?>
