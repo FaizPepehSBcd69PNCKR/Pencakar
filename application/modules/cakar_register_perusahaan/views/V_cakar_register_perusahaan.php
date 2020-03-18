@@ -47,7 +47,7 @@
                     </div>
 				<div id="pass-info" class="clearfix"></div>
 				<button class="btn_1 rounded full-width add_top_30">Daftar Sekarang!</button>
-				<div class="text-center add_top_10">Sudah memiliki akun? <strong>Masuk</strong></div>
+				<div class="text-center add_top_10">Sudah ? <strong>Masuk</strong></div>
 			</form>
 			<div class="copy">© 2020 PENCAKAR</div>
 		</aside>
