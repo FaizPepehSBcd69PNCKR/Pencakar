@@ -1,9 +1,17 @@
+<div class="content-wrapper">
+    <div class="container-fluid">
+
 <ol class="breadcrumb">
     <li class="breadcrumb-item">
       <a href="#">Dashboard</a>
     </li>
     <li class="breadcrumb-item active">Karyawan</li>
   </ol>
+
+  <?php
+    foreach ($tampil as $aku) {
+        $id = $aku->id_rl_perusahaan;
+?>
     <div class="box_general">
         <div class="header_box">
      <div class="filter">
@@ -115,7 +123,7 @@
         <small>Karyawan</small>
         <h4>Mohammad Riski R</h4>
         <p>Web Developer</p>
-        <p><a href="../account1.html" class="btn_1 gray"> Detail Karyawan</a></p>
+        <p><a class="btn_1 gray"> Detail Karyawan</a></p>
         <ul class="buttons">
           <li><a href="#0" class="btn_1 gray delete wishlist_close"><i class="fa fa-fw fa-times-circle-o"></i> Pecat</a></li>
         </ul>
@@ -139,3 +147,6 @@
             </li>
         </ul>
     </nav>
+  </div>
+</div>
+<?php } ?>
