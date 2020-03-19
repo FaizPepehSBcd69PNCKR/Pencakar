@@ -25,7 +25,7 @@
                 <li>
                   <?php foreach ($tampil as $key) {
                    ?>
-                    <figure><img src="<?= base_url(); ?>assets/cakar/img/<?= $key->foto_3x4 ?>" class="rounded-circle" width="80" height="80" alt=""></figure>
+                    <figure><img src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->foto_3x4 ?>" width="120" height="120" alt=""></figure>
                     <h4>Calon Karyawan &nbsp;  <!-- <i class="pending">Pending</i> --></h4>
                     <ul class="booking_list">
                         <li><strong>Nama </strong> <?php echo $key->nama_lengkap ?></li>
@@ -58,6 +58,8 @@
             </li>
         </ul>
     </nav>
+  </div>
+</div>
 
      <form action="<?php echo base_url().'proses_interview/pesan_karyawan' ?>" method="post">
      <div class="modal fade" id="pesan_karyawan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -82,5 +84,3 @@
       </div>
     </div>
       </form>
-  </div>
-</div>

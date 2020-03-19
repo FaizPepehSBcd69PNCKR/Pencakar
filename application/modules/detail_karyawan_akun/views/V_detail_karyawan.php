@@ -110,19 +110,19 @@
         <div class="col-md-4">
           <div class="form-group">
             <label>Foto 3x4</label><br>
-            <img  src="<?= base_url(); ?>assets/cakar/img/<?= $key->foto_3x4 ?>" width="120px" height="150px" >
+            <img  src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->foto_3x4 ?>" width="120px" height="150px" >
           </div>
         </div>
          <div class="col-md-4">
           <div class="form-group">
             <label>Foto ijazah</label><br>
-            <img  src="<?= base_url(); ?>assets/cakar/img/<?= $key->foto_ijazah ?>" width="120px" height="150px">
+            <img  src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->foto_ijazah ?>" width="120px" height="150px">
           </div>
         </div>
          <div class="col-md-4">
           <div class="form-group">
             <label>Foto KTP</label><br>
-            <img  src="<?= base_url(); ?>assets/cakar/img/<?= $key->foto_ktp ?>" width="250px" height="150px">
+            <img  src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->foto_ktp ?>" width="250px" height="150px">
           </div>
         </div>
       </div>

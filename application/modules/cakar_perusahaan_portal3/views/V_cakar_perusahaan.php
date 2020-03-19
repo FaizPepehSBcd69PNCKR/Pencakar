@@ -124,7 +124,7 @@
 							<div class="strip grid">
 								<figure>
 									<a href="#0" class="wish_bt"></a>
-									<a href="account.html"><img  src="<?= base_url(); ?>assets/cakar/img/<?= $key->foto_3x4 ?>" class="img-fluid" style="height: 200px;" alt="">
+									<a href="<?php echo base_url('detail_calon_karyawan3'); ?>"><img  src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->foto_3x4 ?>" class="img-fluid" style="height: 200px;" alt="">
 										<div class="read_more"><span>Selengkapnya</span></div>
 									</a>
 									
@@ -133,7 +133,12 @@
 									<h3><?php echo $key->nama_lengkap ?></h3>
 									<small></small>
 									<p><?php echo $key->keahlian ?></p>
-									<h20><?php echo $key->nama_jalan ?>,<?php echo $key->rt_rw ?>,<?php echo $key->desa_kelurahan ?>,<?php echo $key->kecamatan ?><?php echo $key->kota_kabupaten ?>,<?php echo $key->provinsi ?></h20>
+									<h20><?php echo $key->nama_jalan ?>,
+										<?php echo $key->rt_rw ?>,
+										<?php echo $key->desa_kelurahan ?>,
+										<?php echo $key->kecamatan ?>,
+										<?php echo $key->kota_kabupaten ?>,
+										<?php echo $key->provinsi ?></h20>
 								</div>
 								 <ul>
 								 	<li>

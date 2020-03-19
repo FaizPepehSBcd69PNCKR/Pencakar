@@ -21,23 +21,5 @@ class p_karyawan_saya extends MX_Controller {
 		);
 		echo Modules::run('template/tampilCore_back_end2', $data);
 	}
-	
-	function tambah()
-	{
-		$this->m_data_guru->tambah();
-		redirect('p_karyawan_saya');
-	}
-
-	function edit()
-	{
-		$this->m_data_guru->edit();
-		redirect('p_karyawan_saya');
-	}
-
-	function hapus($id)
-	{
-		$this->m_data_guru->hapus($id);
-		redirect('p_karyawan_saya');
-	}
 }
 ?>

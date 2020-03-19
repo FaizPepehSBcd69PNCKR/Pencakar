@@ -144,19 +144,19 @@
 	<div class="col-md-4">
 		<div class="form-group">
 			<label>Nama jalan</label>
-			<input type="text" name="nama_jalan" class="form-control">
+			<input type="text" name="nama_jalan" class="form-control" placeholder="nama jalan">
 		</div>
 	</div>
 	<div class="col-md-4">
 		<div class="form-group">
 			<label>RT/RW</label>
-			<input type="text" name="rt_rw" class="form-control">
+			<input type="text" name="rt_rw" class="form-control" placeholder="rt / rw">
 		</div>
 	</div>
 	<div class="col-md-4">
 		<div class="form-group">
 			<label>Desa/Kelurahaan</label>
-			<input type="text" name="desa_kelurahan" class="form-control">
+			<input type="text" name="desa_kelurahan" class="form-control" placeholder="desa / Kelurahaan">					
 		</div>
 	</div>
 </div>
@@ -165,19 +165,19 @@
 	<div class="col-md-4">
 		<div class="form-group">
 			<label>Kecamatan</label>
-			<input type="text" name="kecamatan" class="form-control">
+			<input type="text" name="kecamatan" class="form-control" placeholder="kecamatan">
 		</div>
 	</div>
 	<div class="col-md-4">
 		<div class="form-group">
 			<label>Kota/Kabupaten</label>
-			<input type="text" name="kota_kabupaten" class="form-control">
+			<input type="text" name="kota_kabupaten" class="form-control" placeholder="kota / Kabupaten">
 		</div>
 	</div>
 	<div class="col-md-4">
 		<div class="form-group">
 			<label>Provinsi</label>
-			<input type="text" name="provinsi" class="form-control">
+			<input type="text" name="provinsi" class="form-control" placeholder="provinsi">
 		</div>
 	</div>
 </div>
@@ -192,19 +192,19 @@
 				<div class="col-md-4">
 					<div class="form-group">
 						<label>SD/MI</label>
-						<input type="text" name="jenjang1" class="form-control" >
+						<input type="text" name="jenjang1" class="form-control" placeholder="sekolah dasar">
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="form-group">
 						<label>SLTP</label>
-						<input type="text" name="jenjang2" class="form-control">
+						<input type="text" name="jenjang2" class="form-control" placeholder="sekolah menengah pertama">
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="form-group">
 						<label>SLTA</label>
-						<input type="text" name="jenjang3" class="form-control">
+						<input type="text" name="jenjang3" class="form-control" placeholder="sekolah menengah atas / kejuruan">
 					</div>
 				</div>
 			</div>
@@ -213,13 +213,13 @@
 				<div class="col-md-6">
 					<div class="form-group">
 						<label>Universitas</label>
-						<input type="text" name="jenjang4" 	class="form-control">
+						<input type="text" name="jenjang4" 	class="form-control" placeholder="perguruan tinggi">
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="form-group">
 						<label>Gelar</label>
-						<input type="text" name="gelar" class="form-control">
+						<input type="text" name="gelar" class="form-control" placeholder="gelar">
 					</div>
 				</div>
 			</div>
@@ -227,7 +227,7 @@
 						<div class="col-md-12">
 							<div class="form-group">
 								<label>Non formal</label>
-								<input style="height:100px;" class="form-control" placeholder="Personal " name="jenjang5">
+								<input style="height:100px;" class="form-control" name="jenjang5" placeholder="pondok pesantren">
 							</div>
 						</div>
 					</div>
@@ -244,19 +244,19 @@
 	<div class="col-md-4">
 		<div class="form-group">
 			<label>Pernah bekerja di</label>
-			<input type="text" name="nama_perusahaan" class="form-control">
+			<input type="text" name="nama_perusahaan" class="form-control" placeholder="nama sperusahaan">
 		</div>
 	</div>
 	<div class="col-md-4">
 		<div class="form-group">
 			<label>Lama bekerja</label>
-			<input type="text" name="lama_kerja" class="form-control">
+			<input type="text" name="lama_kerja" class="form-control" placeholder="lama anda bekerja">
 		</div>
 	</div>
 	<div class="col-md-4">
 		<div class="form-group">
 			<label>Posisi sebagai</label>
-			<input type="text" name="posisi" class="form-control">
+			<input type="text" name="posisi" class="form-control" placeholder="jabatan di perusahaan">
 		</div>
 	</div>
 </div>
