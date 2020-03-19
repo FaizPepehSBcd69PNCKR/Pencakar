@@ -10,19 +10,19 @@
     <title>PENCAKAR | Pencari Karyawan.</title>
 
     <!-- Favicons-->
-    <link rel="shortcut icon" href="img/12.png" type="image/x-icon">
-    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
-    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+    <link rel="<?php echo base_url(); ?>shortcut icon" href="img/12.png" type="image/x-icon">
+    <link rel="<?php echo base_url(); ?>apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="<?php echo base_url(); ?>apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="<?php echo base_url(); ?>apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="<?php echo base_url(); ?>apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
 
     <!-- GOOGLE WEB FONT -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
     <!-- BASE CSS -->
-    <link href="assets/cakar/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/cakar/css/style.css" rel="stylesheet">
-	<link href="assets/cakar/css/vendors.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/cakar/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url(); ?>assets/cakar/css/style.css" rel="stylesheet">
+	<link href="<?php echo base_url(); ?>assets/cakar/css/vendors.css" rel="stylesheet">
 
     <!-- YOUR CUSTOM CSS -->
     <link href="css/custom.css" rel="stylesheet">
@@ -34,9 +34,9 @@
 	<!-- /login -->
 		
 	<!-- COMMON SCRIPTS -->
-    <script src="js/common_scripts.js"></script>
-	<script src="js/functions.js"></script>
-	<script src="assets/validate.js"></script>
+    <script src="<?php echo base_url(); ?>js/common_scripts.js"></script>
+	<script src="<?php echo base_url(); ?>js/functions.js"></script>
+	<script src="<?php echo base_url(); ?>assets/validate.js"></script>
   
 </body>
 </html>

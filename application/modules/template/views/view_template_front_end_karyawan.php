@@ -46,7 +46,7 @@
                 </div>
                 <div class="col-lg-9 col-12">
                     <ul id="top_menu">
-                        <li><a href="login.html" class="btn_add">Daftar Calon Karyawan</a></li>
+                        <li><a class="btn_add" href="<?php echo base_url('cv_karyawan'); ?>">Daftar Calon Karyawan</a></li>
                         <li><a href="#sign-in-dialog" id="sign-in"  class="btn btn-info" title="Sign In" style="font-size: 13px; color: white;">Log Out</a></li>
                     </ul>
                     <!-- /top_menu -->
@@ -59,12 +59,12 @@
                     </a>
                     <nav id="menu" class="main-menu">
                         <ul>
-                            <li><span><a href="index-2.html">Beranda</a></span></li>
-                            <li><span><a href="grid-listings-filterscol.html">Calon Karyawan</a></span></li>
+                            <li><span><a href="<?php echo base_url('portal2_index'); ?>">Beranda</span></li></a>
+                            <li><span><a href="<?php echo base_url('cakar_perusahaan_portal2'); ?>">Calon Karyawan</a></span></li>
                             <li><span><a href="#0">Halaman</a></span>
                                 <ul>
-                                    <li><a href="blog2.html">Blog</a></li>
-                                    <li><a href="faq.html">Faq Section</a></li>
+                                    <li><a href="<?php echo base_url('blog'); ?>">Blog</a></li>
+                                    <li><a href="<?php echo base_url('portal2_index'); ?>"></a></li>
                                     <li><a href="about.html">Tentang Kami</a></li>
                                     <li><a href="media-gallery.html">Testimoni</a></li>
                                 </ul>
