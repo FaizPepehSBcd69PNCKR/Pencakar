@@ -88,10 +88,14 @@
        <div class="row">
                 <div class="col-md-4">
                     <div class="form-group"><br>
-                    <label>Foto</label><br><br>
-                         <input type="file" name="foto">
+                    <label style="margin-top: 0%">Foto</label><br><br>
+                        <input type="file" name="foto" class="form-control" id="userfile" onchange="tampilkanPreview(this,'preview_3x4')">
                     </div>
                 </div>
+
+                <label for="" class="control-label"></label>
+            <img style="margin-top: 124px; margin-left: -250px; " src="<?= base_url(); ?>assets/cakar/foto34/<?= $aku->foto_3x4 ?>"  id="preview_3x4" width="237" height="220"  />
+
                 <div class="col-md-8 add_top_30">
                     <div class="row">
                         <div class="col-md-6">
@@ -102,7 +106,7 @@
                         </div>
                     <div class="col-md-6">
               <div class="form-group">
-                <label>Nomer Telepon</label>f
+                <label>Nomer Telepon</label>
                 <input type="text" value="<?php echo $aku->nomor_telepon ?>" name="nomor_telepon" class="form-control" >
               </div>
             </div>
@@ -120,7 +124,7 @@
             <div class="col-md-12">
               <div class="form-group">
                 <label>Tentang saya</label>
-                <input type="text" name="tentang_saya" class="form-control" value="<?php echo $aku->tentang_saya ?>">
+                <input type="text" style="height: 110px" name="tentang_saya" class="form-control" value="<?php echo $aku->tentang_saya ?>">
               </div>
             </div>
           </div>
@@ -129,7 +133,7 @@
               </div>
             </div><br><br>
   </div>
-   <div class="row">
+<!--    <div class="row">
       <div class="col-md-6">
         <div class="box_general padding_bottom">
           <div class="header_box version_2">
@@ -168,7 +172,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
         <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
             <button class="btn btn-primary">Simpan</button>
@@ -179,3 +183,37 @@
 </div>
 </div>
    <?php } ?>
+
+
+<script>
+function tampilkanPreview(userfile,idpreview)
+{
+  var gb = userfile.files;
+  for (var i = 0; i < gb.length; i++)
+  {
+    var gbPreview = gb[i];
+    var imageType = /image.*/;
+    var preview=document.getElementById(idpreview);
+    var reader = new FileReader();
+    if (gbPreview.type.match(imageType))
+    {
+      //jika tipe data sesuai
+      preview.file = gbPreview;
+      reader.onload = (function(element)
+      {
+        return function(e)
+        {
+          element.src = e.target.result;
+        };
+      })(preview);
+      //membaca data URL gambar
+      reader.readAsDataURL(gbPreview);
+    }
+      else
+      {
+        //jika tipe data tidak sesuai
+        alert("Tipe file tidak sesuai. Gambar harus bertipe .png, .gif atau .jpg.");
+      }
+  }
+}
+</script>
