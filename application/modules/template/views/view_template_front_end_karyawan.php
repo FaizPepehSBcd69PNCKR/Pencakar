@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="col-lg-3 col-12">
                     <div id="logo">
-                        <a href="index-2.html">
+                        <a href="<?php echo base_url('portal2_index'); ?>">
                             <img src="assets/cakar/img/12.png" width="165" height="50" alt="" class="logo_sticky">
                         </a>
                     </div>
@@ -66,22 +66,22 @@
                                     <li><a href="<?php echo base_url('blog'); ?>">Blog</a></li>
                                     <li><a href="<?php echo base_url('portal2_index'); ?>"></a></li>
                                     <li><a href="<?php echo base_url('tentang_kami_portal1'); ?>">Tentang Kami</a></li>
-                                    <li><a href="media-gallery.html">Testimoni</a></li>
+                                    <li><a href="<?php echo base_url('testimoni_portal1'); ?>">Testimoni</a></li>
                                 </ul>
                             </li>
-                            <li><span><a href="faq.html">Bantuan</a></span></li>
+                            <li><span><a href="<?php echo base_url('bantuan'); ?>">Bantuan</a></span></li>
                             <li><span><a href="#0">Login & Register</a></span>
                                 <ul>
                                     <li><span><a href="#0">Login</a></span>
                                         <ul>
-                                            <li><a href="login.html">Login Karyawan</a></li>
-                                            <li><a href="login2.html">Login Perusahaan</a></li>
+                                            <li><a href="<?php echo base_url('cakar_login'); ?>">Login Karyawan</a></li>
+                                            <li><a href="<?php echo base_url('cakar_login_perusahaan'); ?>">Login Perusahaan</a></li>
                                         </ul>
                                     </li>
                                     <li><span><a href="#0">Register</a></span>
                                         <ul>
-                                            <li><a href="register.html">Register Karyawan</a></li>
-                                            <li><a href="register2.html">Register Perusahaan</a></li>
+                                            <li><a href="<?php echo base_url('cakar_register'); ?>">Register Karyawan</a></li>
+                                            <li><a href="<?php echo base_url('cakar_register_perusahaan'); ?>">Register Perusahaan</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -126,12 +126,10 @@
                     <h3 data-target="#collapse_ft_1">Pintasan</h3>
                     <div class="collapse dont-collapse-sm" id="collapse_ft_1">
                         <ul class="links">
-                            <li><a href="index-2.html">Beranda</a></li>
-                            <li><a href="grid-listings-filterscol.html">Calon Karyawan</a></li>
-                            <li><a href="about.html">Tentang Kami</a></li>
+                            <li><a href="portal2_index">Beranda</a></li>
+                            <li><a href="<?php echo base_url('cakar_perusahaan_portal2'); ?>">Calon Karyawan</a></li>
+                            <li><a href="<?php echo base_url('tentang_kami_portal1'); ?>">Tentang Kami</a></li>
                             <!-- <li><a href="contacts-2.html">Daftar Calon Karyawan</a></li> -->
-                            <li><a href="login.html">Register</a></li>
-                            <li><a href="login.html">Login</a></li>
                         </ul>
                     </div>
                 </div>
@@ -139,12 +137,12 @@
                     <h3 data-target="#collapse_ft_2">Kategori Keahlian</h3>
                     <div class="collapse dont-collapse-sm" id="collapse_ft_2">
                         <ul class="links">
-                            <li><a href="grid-listings-filterscol.html">Web Developer</a></li>
-                            <li><a href="grid-listings-filterscol.html">Keuangan</a></li>
-                            <li><a href="grid-listings-filterscol.html">Otomotif</a></li>
-                            <li><a href="grid-listings-filterscol.html">Design Grafis</a></li>
-                            <li><a href="grid-listings-filterscol.html">Reporter Atau Penyiar</a></li>
-                            <li><a href="grid-listings-filterscol.html">Restaurant Atau Pelayan</a></li>
+                            <li><a href="<?php echo base_url('cakar_perusahaan_portal2'); ?>">Web Developer</a></li>
+                            <li><a href="<?php echo base_url('cakar_perusahaan_portal2'); ?>">Keuangan</a></li>
+                            <li><a href="<?php echo base_url('cakar_perusahaan_portal2'); ?>">Otomotif</a></li>
+                            <li><a href="<?php echo base_url('cakar_perusahaan_portal2'); ?>">Design Grafis</a></li>
+                            <li><a href="<?php echo base_url('cakar_perusahaan_portal2'); ?>">Reporter Atau Penyiar</a></li>
+                            <li><a href="<?php echo base_url('cakar_perusahaan_portal2'); ?>">Restaurant Atau Pelayan</a></li>
                         </ul>
                     </div>
                 </div>
