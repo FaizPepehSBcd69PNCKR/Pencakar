@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class M_portal1_index extends CI_Model {
+class M_portal2_index extends CI_Model {
 
 	function tampil()
 	{
