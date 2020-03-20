@@ -65,7 +65,7 @@
                                 <ul>
                                     <li><a href="<?php echo base_url('blog'); ?>">Blog</a></li>
                                     <li><a href="<?php echo base_url('portal2_index'); ?>"></a></li>
-                                    <li><a href="about.html">Tentang Kami</a></li>
+                                    <li><a href="<?php echo base_url('tentang_kami_portal1'); ?>">Tentang Kami</a></li>
                                     <li><a href="media-gallery.html">Testimoni</a></li>
                                 </ul>
                             </li>
