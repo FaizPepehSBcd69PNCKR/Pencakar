@@ -162,31 +162,31 @@
         <div class="container">
             <ul class="clearfix">
                 <li>
-                    <a href="<?php echo base_url('cakar_perusahaan_'); ?>">
+                    <a href="grid-listings-filterscol.html">
                         <i class="icon-monitor"></i>
                         <h3>IT / Web Developer</h3>
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo base_url('cakar_perusahaan_'); ?>">
+                    <a href="grid-listings-filterscol.html">
                         <i class="icon-tools"></i>
                         <h3>Otomotif</h3>
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo base_url('cakar_perusahaan_'); ?>">
+                    <a href="grid-listings-filterscol.html">
                         <i class="icon-restaurant"></i>
                         <h3>Restoran / Pelayan</h3>
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo base_url('cakar_perusahaan_'); ?>">
+                    <a href="grid-listings-filterscol.html">
                         <i class="icon-money"></i>
                         <h3>Akuntansi/Keungan</h3>
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo base_url('cakar_perusahaan_'); ?>">
+                    <a href="grid-listings-filterscol.html">
                         <i class="icon-dot-3"></i>
                         <h3>More</h3>
                     </a>
