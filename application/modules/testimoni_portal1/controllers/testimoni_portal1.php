@@ -1,13 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class portal1_index extends MX_Controller {
+class testimoni_portal1 extends MX_Controller {
 
 	function __construct()
 	{
 		parent::__construct();
 		// model
-		 $this->load->model('m_portal1_index');
+		 $this->load->model('m_testimoni_portal1');
 		 $this->load->model('login/m_session');
 	}
 
@@ -16,9 +16,9 @@ class portal1_index extends MX_Controller {
 	function index()
 	{
 		$data = array(
-			'namamodule' 	=> "portal1_index",
-			'namafileview' 	=> "V_portal1_index",
-			'tampil'		=> $this->m_portal1_index->tampil(),
+			'namamodule' 	=> "testimoni_portal1",
+			'namafileview' 	=> "V_testimoni_portal1",
+			'tampil'		=> $this->m_testimoni_portal1->tampil(),
 		);
 		echo Modules::run('template/tampilCore', $data);
 	}
