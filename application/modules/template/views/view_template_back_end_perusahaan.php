@@ -17,16 +17,16 @@
   <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
 	
   <!-- Bootstrap core CSS-->
-  <link href="assets/akun/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?php echo base_url('assets/akun/vendor/bootstrap/css/bootstrap.min.css')?>" rel="stylesheet">
   <!-- Main styles -->
-  <link href="assets/akun/css/admin.css" rel="stylesheet">
+  <link href="<?php echo base_url('assets/akun/css/admin.css')?>" rel="stylesheet">
   <!-- Icon fonts-->
-  <link href="assets/akun/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="<?php echo base_url('assets/akun/vendor/font-awesome/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
   <!-- Plugin styles -->
-  <link href="assets/akun/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <link href="<?php echo base_url('assets/akun/vendor/datatables/dataTables.bootstrap4.css')?>" rel="stylesheet">
   <!-- Your custom styles -->
-  <link href="assets/akun/css/custom.css" rel="stylesheet">
-  <link href="assets/cakar/css/vendors.css" rel="stylesheet">
+  <link href="<?php echo base_url('assets/akun/css/custom.css')?>" rel="stylesheet">
+  <link href="<?php echo base_url('assets/cakar/css/vendors.css')?>" rel="stylesheet">
 	
 </head>
 
@@ -229,21 +229,21 @@
       </div>
     </div>
     <!-- Bootstrap core JavaScript-->
-    <script src="assets/akun/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/akun/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="<?php echo base_url('assets/akun/vendor/jquery/jquery.min.js')?>"></script>
+    <script src="<?php echo base_url('assets/akun/vendor/bootstrap/js/bootstrap.bundle.min.js')?>"></script>
     <!-- Core plugin JavaScript-->
-    <script src="assets/akun/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="<?php echo base_url('assets/akun/vendor/jquery-easing/jquery.easing.min.js')?>"></script>
     <!-- Page level plugin JavaScript-->
-    <script src="assets/akun/vendor/chart.js/Chart.js"></script>
-    <script src="assets/akun/vendor/datatables/jquery.dataTables.js"></script>
-    <script src="assets/akun/vendor/datatables/dataTables.bootstrap4.js"></script>
-	<script src="assets/akun/vendor/jquery.selectbox-0.2.js"></script>
-	<script src="assets/akun/vendor/retina-replace.min.js"></script>
-	<script src="assets/akun/vendor/jquery.magnific-popup.min.js"></script>
+    <script src="<?php echo base_url('assets/akun/vendor/chart.js/Chart.js')?>"></script>
+    <script src="<?php echo base_url('assets/akun/vendor/datatables/jquery.dataTables.js')?>"></script>
+    <script src="assets/akun/vendor/datatables/dataTables.bootstrap4.js')?>"></script>
+	<script src="<?php echo base_url('assets/akun/vendor/jquery.selectbox-0.2.js')?>"></script>
+	<script src="<?php echo base_url('assets/akun/vendor/retina-replace.min.js')?>"></script>
+	<script src="<?php echo base_url('assets/akun/vendor/jquery.magnific-popup.min.js')?>"></script>
     <!-- Custom scripts for all pages-->
-    <script src="assets/akun/js/admin.js"></script>
+    <script src="<?php echo base_url('assets/akun/js/admin.js')?>"></script>
 	<!-- Custom scripts for this page-->
-    <script src="assets/akun/js/admin-charts.js"></script>
+    <script src="<?php echo base_url('assets/akun/js/admin-charts.js')?>"></script>
 	
 </body>
 </html>

@@ -124,7 +124,7 @@
 							<div class="strip grid">
 								<figure>
 									<a href="#0" class="wish_bt"></a>
-									<a href="<?php echo base_url('detail_calon_karyawan3'); ?>"><img  src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->foto_3x4 ?>" class="img-fluid" style="height: 200px;" alt="">
+									<a href="<?php echo base_url('detail_calon_karyawan3/tampil/'. $id); ?>"><img  src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->foto_3x4 ?>" class="img-fluid" style="height: 200px;" alt="">
 										<div class="read_more"><span>Selengkapnya</span></div>
 									</a>
 									

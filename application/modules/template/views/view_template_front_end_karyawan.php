@@ -20,13 +20,13 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
     <!-- BASE CSS -->
-    <link href="assets/cakar/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/cakar/css/style.css" rel="stylesheet">
-    <link href="assets/cakar/css/vendors.css" rel="stylesheet">
+    <link href="<?php echo base_url('assets/cakar/css/bootstrap.min.css')?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/cakar/css/style.css')?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/cakar/css/vendors.css')?>" rel="stylesheet">
 
     <!-- YOUR CUSTOM CSS -->
-    <link href="assets/cakar/css/custom.css" rel="stylesheet">
-    <link href="assets/akun/vendor/dropzone.css" rel="stylesheet">
+    <link href="<?php echo base_url('assets/cakar/css/custom.css')?>" rel="stylesheet">
+    <link href="<?php echo base_url('assets/akun/vendor/dropzone.css')?>" rel="stylesheet">
 
 </head>
 
@@ -201,13 +201,13 @@
     <div id="toTop"></div><!-- Back to top button -->
     
     <!-- COMMON SCRIPTS -->
-    <script src="assets/cakar/js/common_scripts.js"></script>
-    <script src="assets/cakar/js/functions.js"></script>
-    <script src="assets/cakar/assets/validate.js"></script>
-    <script src="assets/akun/vendor/dropzone.js"></script>
+    <script src="<?php echo base_url('assets/cakar/js/common_scripts.js')?>"></script>
+    <script src="<?php echo base_url('assets/cakar/js/functions.js')?>"></script>
+    <script src="<?php echo base_url('assets/cakar/assets/validate.js')?>"></script>
+    <script src="<?php echo base_url('assets/akun/vendor/dropzone.js')?>"></script>
     
     <!-- SPECIFIC SCRIPTS -->
-    <script src="js/video_header.js"></script>
+    <script src="<?php echo base_url('js/video_header.js')?>"></script>
     <script>
         HeaderVideo.init({
             container: $('.header-video'),

@@ -51,7 +51,7 @@
         <div class="col-md-12">
               <div class="form-group">
                 <label>Alamat lengkap</label>
-               <input style="height:100px;" disabled="disabled" class="form-control" value="<?php echo $key->nama_jalan ?>,<?php echo $key->rt_rw ?>,<?php echo $key->desa_kelurahan ?>,<?php echo $key->kecamatan ?><?php echo $key->kota_kabupaten ?>,<?php echo $key->provinsi ?>,<?php echo $key->kodepos ?>">
+               <input style="height:100px;" disabled="disabled" class="form-control" value="<?php echo $key->nama_jalan ?>,<?php echo $key->rt_rw ?>,<?php echo $key->desa_kelurahan ?>,<?php echo $key->kecamatan ?><?php echo $key->kota_kabupaten ?>">
               </div>
             </div>
       </div>

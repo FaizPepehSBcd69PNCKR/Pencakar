@@ -19,7 +19,7 @@
           <div class="form-group">
           <label style="font-size: 18px; margin-left: 7%; margin-top: 10%;">Foto</label>
 					<div class="form-group" style="margin-left: 7%; margin-top: 5%;">
-                <img  src="<?= base_url(); ?>assets/cakar/img/<?= $aku->logo_perusahaan ?>" width="180px" height="180px">
+                <img  src="<?= base_url(); ?>assets/cakar/foto34/<?= $aku->logo_perusahaan ?>" width="180px" height="180px">
 				    </div>
 				</div>
       </div>
@@ -90,7 +90,7 @@
                 </div>
 
                 <label for="" class="control-label"></label>
-            <img style="margin-top: 123px; margin-left: -250px; " src="<?= base_url(); ?>assets/cakar/img/<?= $aku->logo_perusahaan ?>"  id="preview_3x4" width="237" height="220"  />
+            <img style="margin-top: 123px; margin-left: -250px; " src="<?= base_url(); ?>assets/cakar/foto34/<?= $aku->logo_perusahaan ?>"  id="preview_3x4" width="237" height="220"  />
 
                 <div class="col-md-8 add_top_30">
                     <div class="row">

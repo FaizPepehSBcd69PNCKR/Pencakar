@@ -21,5 +21,9 @@ class p_karyawan_saya extends MX_Controller {
 		);
 		echo Modules::run('template/tampilCore_back_end2', $data);
 	}
+	function hapus($id_cv)
+	{
+		$this->m_p_karyawan_saya->hapus($id_cv);
+	}
 }
 ?>

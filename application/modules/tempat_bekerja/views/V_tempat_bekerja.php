@@ -23,7 +23,7 @@ foreach ($tampil as $key) {
             <br><br>
             <center>
           <div class="form-group" style="margin-left: 7%; margin-top: -4%;">
-                <img src="assets/akun/img/logounilever.png" width="200px" height="200px" class="rounded-circle">
+                <img src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->logo_perusahaan ?>" width="200px" height="200px" class="rounded-circle">
             </div>
             </center>
         </div>

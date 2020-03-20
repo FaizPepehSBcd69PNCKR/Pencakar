@@ -23,7 +23,7 @@ class M_cv_karyawan extends CI_Model {
 
 		$this->load->library('upload');
 		$nmfile1 = "file_".time();
-		$config['upload_path']		= 'assets/cakar/img';
+		$config['upload_path']		= 'assets/cakar/foto34';
 		$config['allowed_types']	= 'gif|jpg|png|jpeg';
 		$config['max_size']			= 5120;
 		$config['max_width']		= 4300;

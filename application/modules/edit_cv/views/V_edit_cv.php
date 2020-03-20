@@ -51,7 +51,7 @@
         <div class="col-md-12">
               <div class="form-group">
                 <label>Alamat lengkap</label>
-                <input style="height:100px;" disabled="disabled" class="form-control" value="<?php echo $key->nama_jalan ?>,<?php echo $key->rt_rw ?>,<?php echo $key->desa_kelurahan ?>,<?php echo $key->kecamatan ?><?php echo $key->kota_kabupaten ?>,<?php echo $key->provinsi ?>,<?php echo $key->kodepos ?>">
+                <input style="height:100px;" disabled="disabled" class="form-control" value="<?php echo $key->nama_jalan ?>,<?php echo $key->rt_rw ?>,<?php echo $key->desa_kelurahan ?>,<?php echo $key->kecamatan ?><?php echo $key->kota_kabupaten ?>,<?php echo $key->provinsi ?>">
               </div>
             </div>
       </div>
@@ -210,11 +210,11 @@
     </div>
     <!-- /box_general-->
     </div>
-    <p style="text-align: center;"><a href="add-listing-2.html" class="btn_1 medium" class="nav-link" data-toggle="modal" data-target="#edit_biodata">Edit</a></p>
+    <p style="text-align: center;"><a href="" class="btn_1 medium" class="nav-link" data-toggle="modal" data-target="#edit_biodata">Edit</a></p>
     <!-- /.container-fluid-->
     </div>
     
-    <?= form_open_multipart('edit_cv/edit');  ?>
+    <form method="post" action="<?php echo base_url('edit_cv/edit'); ?>" enctype="multipart/form-data">
     <input type="hidden" name="id_cv" value="<?php echo $key->id_cv ?>">
     <input type="hidden" name="id_rl_karyawan" value="<?php echo $key->id_rl_karyawan ?>">
     <input type="hidden" name="id_alamat" value="<?php echo $key->id_alamat ?>">
@@ -360,15 +360,15 @@
       <div class="row">
         <div class="col-md-4 ">
             <label for="" class="control-label"></label>
-            <img src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->foto_3x4 ?>" width="100" height="120" />
+            <img src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->foto_3x4 ?>" width="100" height="120" id="preview_3x4" />
         </div>
         <div class="col-md-4 ">
             <label for="" class="control-label"></label>
-            <img  src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->foto_ijazah ?>" width="80" height="120" />
+            <img  src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->foto_ijazah ?>" width="80" height="120" id="preview_ijazah"/>
         </div>
         <div class="col-md-4 ">
             <label for="" class="control-label"></label>
-            <img src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->foto_ktp ?>" width="200" height="120" />
+            <img src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->foto_ktp ?>" width="200" height="120" id="preview_ktp"/>
         </div>
       </div>
     </form>
@@ -498,5 +498,38 @@
         </div>
       </div>
     </div>
-    <?= form_close(); ?>
+    </form>
     <?php } ?>
+
+    <script>
+function tampilkanPreview(userfile,idpreview)
+{
+  var gb = userfile.files;
+  for (var i = 0; i < gb.length; i++)
+  {
+    var gbPreview = gb[i];
+    var imageType = /image.*/;
+    var preview=document.getElementById(idpreview);
+    var reader = new FileReader();
+    if (gbPreview.type.match(imageType))
+    {
+      //jika tipe data sesuai
+      preview.file = gbPreview;
+      reader.onload = (function(element)
+      {
+        return function(e)
+        {
+          element.src = e.target.result;
+        };
+      })(preview);
+      //membaca data URL gambar
+      reader.readAsDataURL(gbPreview);
+    }
+      else
+      {
+        //jika tipe data tidak sesuai
+        alert("Tipe file tidak sesuai. Gambar harus bertipe .png, .gif atau .jpg.");
+      }
+  }
+}
+</script>

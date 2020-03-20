@@ -12,7 +12,7 @@ class Detail_calon_karyawan3 extends MX_Controller {
 
 	
 	// index
-	function index()
+	function tampil()
 	{
 		$data = array(
 			'cakarhmvc' 		=> "detail_calon_karyawan3",
@@ -21,4 +21,5 @@ class Detail_calon_karyawan3 extends MX_Controller {
 		);
 		echo Modules::run('template/tampilcore_front_end3', $data);
 	}
+
 }
