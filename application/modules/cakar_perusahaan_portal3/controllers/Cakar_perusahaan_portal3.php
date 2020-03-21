@@ -21,4 +21,8 @@ class Cakar_perusahaan_portal3 extends MX_Controller {
 		);
 		echo Modules::run('template/tampilcore_front_end3', $data);
 	}
+	function tampil($id)
+	{
+		$this->m_cakar_perusahaan->data($id);
+	}
 }
