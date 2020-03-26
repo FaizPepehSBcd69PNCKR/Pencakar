@@ -136,7 +136,7 @@
 
         <div class="panel">
                               <div class="panel-body text-center">
-                                  <img src="assets/cakar/img/images.jpeg" class="rounded-circle" alt="tidak ada foto" width="75" height="75"> 
+                                  <img src="<?php echo base_url('assets/cakar/img/16.jpg'); ?>" class="rounded-circle" alt="tidak ada foto" width="75" height="75"> 
                                   <br>
                                   <br>
                                   <span class="text-lg text-semibold mar-no text-main" style="color: white;">Mohammad Riski R</span>

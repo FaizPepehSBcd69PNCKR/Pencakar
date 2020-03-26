@@ -21,7 +21,7 @@
         <ul>
           
           <li>
-            <figure><img src="img/logohummasoft.png" alt="kosong" class="rounded-circle" width="100" height="100" alt=""></figure>
+            <figure><img src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->logo_perusahaan ?>" alt="kosong" class="rounded-circle" width="100" height="100" alt=""></figure>
             <h4>Perusahaan &nbsp;</h4>
             <ul class="booking_list">
               <li><strong>Nama Perusahan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</strong><b><?php echo $key->nama_perusahaan ?></b></li>

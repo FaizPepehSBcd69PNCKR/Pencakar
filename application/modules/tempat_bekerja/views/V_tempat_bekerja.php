@@ -37,7 +37,7 @@ foreach ($tampil as $key) {
                 </a>
             </div>
             <div class="blog-body">
-                <p>PT Unilever Indonesia Tbk adalah perusahaan Indonesia yang merupakan anak perusahaan dari Unilever. Perusahaan ini sebelumnya bernama Lever Zeepfabrieken N.V.</p>
+                <p><?php  echo $key->keterangan_perusahaan ?></p>
                 <p style="margin-top: -10px;">Kantor Pusat : Jakarta</p>
                 <p style="margin-top: -20px;">Posisi : Karyawan</p>
                 <!-- <center><button class="btn btn-danger"data-toggle="modal" data-target="#tambah">Mengundurkan diri</button></center><br> -->
