@@ -19,6 +19,6 @@ class Yang_merekrut_anda extends MX_Controller {
 			'akunhmvcview' 	=> "v_yang_merekrut_anda",
 			'tampil'        => $this->m_yang_merekrut_anda->tampil(),
 		);
-		echo Modules::run('template/tampilCore_back_end2', $data);
+		echo Modules::run('template/tampilCore_back_end', $data);
 	}
 }

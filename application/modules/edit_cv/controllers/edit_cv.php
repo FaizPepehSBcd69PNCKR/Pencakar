@@ -17,7 +17,7 @@ class Edit_cv extends MX_Controller {
 		$data = array(
 			'akunhmvc' 			=> "edit_cv",
 			'akunhmvcview' 		=> "v_edit_cv",
-			'tampil'        => $this->m_edit_cv->tampil(),
+			'tampil'        	=> $this->m_edit_cv->tampil(),
 		);
 		echo Modules::run('template/tampilCore_back_end', $data);
 	}

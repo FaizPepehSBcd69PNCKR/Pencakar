@@ -139,13 +139,13 @@
         <div class="col-md-4">
           <div class="form-group">
             <label>SD/MI</label>
-            <input type="text" name="" disabled="disabled" class="form-control" >
+            <input type="text" disabled="disabled" class="form-control" value="<?php echo $key->jenjang ?>">
           </div>
         </div>
         <div class="col-md-4">
           <div class="form-group">
             <label>SLTP</label>
-            <input type="text" name="" disabled="disabled" class="form-control">
+            <input type="text" disabled="disabled" class="form-control" value="<?php echo $key->jenjang ?>">
           </div>
         </div>
         <div class="col-md-4">
@@ -433,13 +433,13 @@
      <div class="col-md-6">
       <div class="form-group">
         <label>SD/MI</label>
-        <input type="text" value="" class="form-control">
+        <input type="text" class="form-control" value="<?php echo $key->jenjang ?>">
       </div>
     </div>
     <div class="col-md-6">
       <div class="form-group">
         <label>SLTP</label>
-        <input type="text" value="" class="form-control">
+        <input type="text" class="form-control">
       </div>
     </div>
   </div>

@@ -34,7 +34,7 @@
 
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-default fixed-top" id="mainNav">
-    <a class="navbar-brand" href="index.html"><img src="assets/akun/img/12.png" data-retina="true" alt="" width="165" height="40"></a>
+    <a class="navbar-brand" href="index.html"><img src="<?php echo base_url('assets/akun/img/12.png')?>" data-retina="true" alt="" width="165" height="40"></a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -136,7 +136,7 @@
 
         <div class="panel">
                               <div class="panel-body text-center">
-                                  <img src="<?php echo base_url('assets/cakar/img/16.jpg'); ?>" class="rounded-circle" alt="tidak ada foto" width="75" height="75"> 
+                                  <img src="<?php echo base_url('assets/cakar/img/large/32.jpeg'); ?>" class="rounded-circle" alt="tidak ada foto" width="75" height="75"> 
                                   <br>
                                   <br>
                                   <span class="text-lg text-semibold mar-no text-main" style="color: white;">Mohammad Riski R</span>
@@ -144,37 +144,37 @@
                               </div>
                           </div>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link" href="index.html" style="color: white;">
+          <a class="nav-link" href="?" style="color: white;">
             <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">Dashboard</span>
           </a>
         </li>
 		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Messages">
-          <a class="nav-link" href="bookmarks.html" style="color: white;">
+          <a class="nav-link" href="<?php echo base_url('tempat_bekerja') ?>" style="color: white;">
             <i class=" icon-commerical-building"></i>
             <span class="nav-link-text">Tempat bekerja</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Messages">
-          <a class="nav-link" href="bookings_2.html" style="color: white;">
+          <a class="nav-link" href="<?php echo base_url('proses_interview') ?>" style="color: white;">
             <i class="icon-wheelchair"></i>
             <span class="nav-link-text">Proses interview</span>
           </a>
         </li>
 		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="" data-original-title="Bookings">
-          <a class="nav-link" href="bookings.html" style="color: white;">
+          <a class="nav-link" href="<?php echo base_url('yang_merekrut_anda') ?>" style="color: white;">
             <i class="fa fa-fw fa-calendar-check-o"></i>
             <span class="nav-link-text">Yang merekrut anda <span class="badge badge-pill badge-primary">6 Baru</span></span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Messages">
-          <a class="nav-link" href="add-listing.html" style="color: white;">
+          <a class="nav-link" href="<?php echo base_url('edit_cv') ?>" style="color: white;">
             <i class="icon-edit"></i>
             <span class="nav-link-text">Edit CV</span>
           </a>
         </li>
 		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="My profile">
-          <a class="nav-link" href="user-profile.html" style="color: white;">
+          <a class="nav-link" href="<?php echo base_url('profil_saya') ?>" style="color: white;">
             <i class="fa fa-fw fa-user"></i>
             <span class="nav-link-text">Profil saya</span>
           </a>
