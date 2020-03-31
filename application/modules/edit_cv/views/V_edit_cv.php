@@ -1,9 +1,4 @@
-<?php                                    
-            foreach($tampil as $key){
-              ?>
- <!-- /Navigation-->
-  
-  <div class="content-wrapper">
+   <div class="content-wrapper">
     <div class="container-fluid">
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
@@ -16,7 +11,9 @@
       <div class="header_box version_2">
         <h2><i class="fa fa-file"></i> Biodata</h2>
       </div>
-       
+       <?php                                    
+            foreach($tampil as $key){
+              ?>
       <div class="row">
         <div class="col-md-6">
           <div class="form-group">
@@ -145,7 +142,7 @@
         <div class="col-md-4">
           <div class="form-group">
             <label>SLTP</label>
-            <input type="text" disabled="disabled" class="form-control" value="<?php echo $key->jenjang ?>">
+            <input type="text" disabled="disabled" class="form-control">
           </div>
         </div>
         <div class="col-md-4">

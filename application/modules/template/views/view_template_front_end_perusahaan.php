@@ -10,7 +10,7 @@
     <title>PENCAKAR | Pencari Karyawan</title>
 
     <!-- Favicons-->
-    <link rel="shortcut icon" href="assets/cakar/img/12.png" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo base_url().'assets/cakar/img/12.png'?>" type="image/x-icon">
     <link rel="apple-touch-icon" type="image/x-icon" href="assets/cakar/img/12.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
     <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
@@ -39,14 +39,14 @@
             <div class="row">
                 <div class="col-lg-3 col-12">
                     <div id="logo">
-                        <a href="index-2.html">
-                            <img src="assets/cakar/img/12.png" width="165" height="50" alt="" class="logo_sticky">
+                        <a href="?">
+                            <img src="<?php echo base_url().'assets/cakar/img/12.png'?>" width="165" height="50" alt="" class="logo_sticky">
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-9 col-12">
                     <ul id="top_menu">
-                        <li><a href="#sign-in-dialog" id="sign-in"  class="btn btn-info" title="Sign In" style="font-size: 13px; color: white;">Log Out</a></li>
+                        <li><a href="#sign-in-dialog" id="sign-in"  class="btn btn-info" style="font-size: 13px; color: white;">Log Out</a></li>
                     </ul>
                     <!-- /top_menu -->
                     <a href="#menu" class="btn_mobile">
@@ -58,33 +58,18 @@
                     </a>
                     <nav id="menu" class="main-menu">
                         <ul>
-                            <li><span><a href="index-2.html">Beranda</a></span></li>
-                            <li><span><a href="grid-listings-filterscol.html">Calon Karyawan</a></span></li>
+                            <li><span><a href="?">Beranda</a></span></li>
+                            <li><span><a href="<?php echo base_url().'cakar_perusahaan_portal3' ?>">Calon Karyawan</a></span></li>
                             <li><span><a href="#0">Halaman</a></span>
                                 <ul>
-                                    <li><a href="blog2.html">Blog</a></li>
-                                    <li><a href="faq.html">Faq Section</a></li>
-                                    <li><a href="about.html">Tentang Kami</a></li>
-                                    <li><a href="media-gallery.html">Testimoni</a></li>
+                                    <li><a href="<?php echo base_url().'p_profil_saya' ?>">Akun Saya</a></li>
+                                    <li><a href="?">Blog</a></li>
+                                    <li><a href="?">Faq Section</a></li>
+                                    <li><a href="?">Tentang Kami</a></li>
+                                    <li><a href="?">Testimoni</a></li>
                                 </ul>
                             </li>
-                            <li><span><a href="faq.html">Bantuan</a></span></li>
-                            <li><span><a href="#0">Login & Register</a></span>
-                                <ul>
-                                    <li><span><a href="#0">Login</a></span>
-                                        <ul>
-                                            <li><a href="login.html">Login Karyawan</a></li>
-                                            <li><a href="login2.html">Login Perusahaan</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><span><a href="#0">Register</a></span>
-                                        <ul>
-                                            <li><a href="register.html">Register Karyawan</a></li>
-                                            <li><a href="register2.html">Register Perusahaan</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
+                            <li><span><a href="?">Bantuan</a></span></li>
                         </ul>
                     </nav>
                 </div>
@@ -215,7 +200,7 @@
 
           <div class="modal-footer">
             <a class="btn btn-danger mfp-close" href="javascript:;">Batal</a>
-             <a class="btn btn-primary" href="<?php echo base_url().'edit_cv'; ?>">Rekrut</a>
+             <a class="btn btn-primary" href="<?php echo base_url().'cakar_perusahaan_portal3'; ?>">Rekrut</a>
       </div>
     </div>
   </div>

@@ -19,6 +19,6 @@ class Detail_karyawan_akun extends MX_Controller {
 			'akunhmvcview' 		=> "v_detail_karyawan",
 			'tampil'			=> $this->m_detail_karyawan->tampil()
 		);
-		echo Modules::run('template/tampilCore_back_end', $data);
+		echo Modules::run('template/tampilCore_back_end2', $data);
 	}
 }

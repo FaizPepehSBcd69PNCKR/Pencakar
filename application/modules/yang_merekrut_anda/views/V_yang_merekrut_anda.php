@@ -9,7 +9,7 @@
       </ol>
     <div class="box_general">
       <div class="header_box">
-        <h2 class="d-inline-block">Rekrutmen</h2>
+        <h2 class="d-inline-block"><i class="fa fa-fw fa-calendar-check-o"></i> Rekrutmen</h2>
       </div>
       <div class="row">
         <?php 
@@ -42,16 +42,8 @@
     </div>
     <!-- /box_general-->
     <nav aria-label="...">
-      <ul class="pagination pagination-sm add_bottom_30">
-        <li class="page-item disabled">
-          <a class="page-link" href="#" tabindex="-1">Previous</a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-          <a class="page-link" href="#">Next</a>
-        </li>
+      <ul>
+       <?php echo $this->pagination->create_links(); ?>
       </ul>
     </nav>
     <!-- /pagination-->

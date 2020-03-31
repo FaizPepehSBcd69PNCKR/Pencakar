@@ -59,4 +59,11 @@ class Template extends MX_Controller {
 		$this->load->view('view_template_core_login_register',$data);
 	}
 
+	public function tampilCore_frontend($data)
+	{
+		$id = $this->session->userdata('session_id');
+		
+		$this->load->view('view_template_frontend',$data);
+	}
+
 }

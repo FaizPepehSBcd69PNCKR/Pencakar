@@ -8,10 +8,10 @@
 </style>
 <main>
 	<div class="container margin_60">
+        <?php foreach ($tampil as $key) {
+             ?>
 		<div class="row justify-content-center">
-			<?php foreach ($tampil as $key) {
-				$id = $key->id_cv
-			 ?>
+			
 			<div class="col-xl-3 col-lg-3 col-md-8">
 				<div class="box_account">
 					<h3 class="" style="margin-left: -100%; color: blue;">FOTO</h3>
@@ -102,7 +102,7 @@
                 <div class="form_container" style="width:160%; margin-left: -90%;">
                     <ul>
                         <li>          
-                        	<figure><img src="img/large/logogojek.png" class="rounded-circle" alt="not photos" width="60" height="60"></figure>
+                        	<figure><img src="<?php echo base_url().'assets/akun/img/logobri.png' ?>" class="rounded-circle" alt="not photos" width="60" height="60"></figure>
                         	<h4 style="margin-left: 22%; margin-top: -17%;">Go-jek</h4><br>
                         	<li><h8 style="margin-left: -1%;">Dikeluarkan :&nbsp;&nbsp; 21/12/2018</h8></li>
                         </li><br>
@@ -192,7 +192,8 @@
 					<!-- end biodata -->
 				</div>
 			</div>
-		<?php } ?>
+		
 		</div>
+        <?php } ?>
 	</div>
 </main>

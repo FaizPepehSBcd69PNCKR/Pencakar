@@ -38,15 +38,9 @@
     <!-- /box_general-->
     <nav aria-label="...">
         <ul class="pagination pagination-sm add_bottom_30">
-            <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1">Previous</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#">Next</a>
-            </li>
+
+          <?php echo $this->pagination->create_links(); ?>
+
         </ul>
     </nav>
   </div>

@@ -7,10 +7,6 @@
     </li>
     <li class="breadcrumb-item active">Karyawan</li>
   </ol>
-
-  <?php
-    foreach ($tampil as $aku) {
-?>
     <div class="box_general">
         <div class="header_box">
      <div class="filter">
@@ -30,7 +26,7 @@
         <div class="list_general">
             <ul>
                 <li>
-                    <figure><img src="<?= base_url(); ?>assets/cakar/foto34/<?= $aku->foto_3x4 ?>" alt=""></figure>
+                    <figure><img src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->foto_3x4 ?>" alt=""></figure>
                     <small>Karyawan</small>
                     <h4><?php echo $key->nama_lengkap ?></h4>
                     <p><?php echo $key->keahlian ?></p>
@@ -48,17 +44,8 @@
     <!-- /box_general-->
     <nav aria-label="...">
         <ul class="pagination pagination-sm add_bottom_30">
-            <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1">Previous</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#">Next</a>
-            </li>
+          <?php echo $this->pagination->create_links(); ?>
         </ul>
     </nav>
   </div>
 </div>
-<?php } ?>

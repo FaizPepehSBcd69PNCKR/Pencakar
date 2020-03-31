@@ -1,8 +1,3 @@
-<?php 
-foreach ($tampil as $key) {
-  $id = $key->id_rl_perusahaan
-
- ?>
 <div class="content-wrapper">
     <div class="container-fluid">
       <!-- Breadcrumbs-->
@@ -14,9 +9,13 @@ foreach ($tampil as $key) {
       </ol>
       <center>
     <div class="box_general padding_bottom">
+      
       <div class="header_box version_2">
         <h2 style="margin-left: -43%;"><i class=" icon-commerical-building" style="color: black;"></i>Perusahaan yang telah menjadi tempat bekerja anda</h2>
       </div>
+       <?php 
+foreach ($tampil as $key) {
+ ?>
       <div class="row">
         <div class="col-md-11">
           <div class="form-group">
@@ -40,35 +39,35 @@ foreach ($tampil as $key) {
                 <p><?php  echo $key->keterangan_perusahaan ?></p>
                 <p style="margin-top: -10px;">Kantor Pusat : Jakarta</p>
                 <p style="margin-top: -20px;">Posisi : Karyawan</p>
-                <!-- <center><button class="btn btn-danger"data-toggle="modal" data-target="#tambah">Mengundurkan diri</button></center><br> -->
-                <center><a class="btn btn-danger" href="<?php echo base_url('tempat_bekerja/hapus/'. $key->id_rl_perusahaan) ?>">Mengundurkan diri</a></center><br>
+                <center class="btn btn-danger" data-toggle="modal" data-target="#Mengundurkan">Mengundurkan diri</center><br>
               </div>
             </div>
+             <?php } ?>
           </div>
         </div>
+        
           </center>
       
           <!-- /row-->
         </div>
       </div>
-      <div class="modal fade" id="tambah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="Mengundurkan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Pesan</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Peringatan</h5>
             </div>
             <div class="modal-body">
                 <form class="form-horizontal">
                     <div class="panel-body">
-                        <input style="height:100px;" placeholder="ketik pesan . . . " rows="5" class="form-control">
+                        <center><h6>Apakah anda yakin ingin mengundurkan diri?</h6></center>
                     </div>
                 </form>
             </div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
-            <button class="btn btn-primary">Kirim</button>
+            <a href="<?php echo base_url().'pesan' ?>"class="btn btn-primary">Yakin</a>
           </div>
           </div>
         </div>
       </div>
-    <?php } ?>

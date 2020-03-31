@@ -8,14 +8,13 @@
         </li>
         <li class="breadcrumb-item active">Ganti Profil </li>
       </ol>
-         <?php
-    foreach ($tampil as $aku) {
-        $id = $aku->id_rl_karyawan;
-?>
     <div class="box_general padding_bottom">
       <div class="header_box version_2"> 
         <h2><i class="fa fa-user"></i>Profile details</h2>
       </div>
+       <?php
+    foreach ($tampil as $aku) {
+?>
       <div class="row">
         <div class="col-md-4">
           <div class="form-group"><br>

@@ -10,7 +10,7 @@
   <title>PENCAKAR - Akun Anda</title>
 	
   <!-- Favicons-->
-  <link rel="shortcut icon" href="img/12.png" type="image/x-icon">
+  <link rel="shortcut icon" href="<?php echo base_url(). 'assets/akun/img/12.png'?>" type="image/x-icon">
   <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
   <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
   <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
@@ -34,7 +34,7 @@
 
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-default fixed-top" id="mainNav">
-    <a class="navbar-brand" href="index.html"><img src="assets/cakar/img/12.png" data-retina="true" alt="" width="165" height="36"></a>
+    <a class="navbar-brand" href="index.html"><img src="<?php echo base_url(). 'assets/akun/img/12.png'?>" data-retina="true" alt="" width="165" height="36"></a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -42,7 +42,7 @@
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
         <div class="panel">
             <div class="panel-body text-center">
-                <img src="img/bni1.jpg" class="rounded-circle" alt="foto" width="75" height="75"> 
+                <img src="<?php echo base_url(). 'assets/akun/img/logobri.png' ?>" class="rounded-circle" alt="foto" width="75" height="75"> 
                 <br>
                 <br>
                 <span class="text-muted"><a style="color: white; font-size: 18px;">Bank Negara Indonesia</a></span> 
@@ -50,49 +50,49 @@
             </div>
         </div>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link" href="index.html">
+          <a class="nav-link" href="?">
             <i class="fa fa-fw fa-dashboard" style="color: white;"></i>&nbsp;&nbsp;
             <span class="nav-link-text" style="color: white;">Dashboard</span>
           </a>
         </li>
          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="My profile">
-          <a class="nav-link" href="user-profile.html">
+          <a class="nav-link" href="<?php echo base_url(). 'p_profil_saya' ?>">
             <i class="fa fa-user" style="color: white;"></i> &nbsp;&nbsp;
             <span class="nav-link-text" style="color: white;">Profil saya</span>
           </a>
         </li>
            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="" data-original-title="Bookings">
-          <a class="nav-link" href="bookings.html">
+          <a class="nav-link" href="?">
             <i class="fa fa-list" style="color: white;"></i>&nbsp;&nbsp;
             <span class="nav-link-text" style="color: white;">Hasil Rekrut</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="" data-original-title="Bookings">
-          <a class="nav-link" href="bookings_2.html">
+          <a class="nav-link" href="<?php echo base_url().'p_calon_karyawan' ?>">
             <i class="fa fa-user" style="color: white;"></i>&nbsp;&nbsp;
             <span class="nav-link-text" style="color: white;">Calon karyawan</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Bookmarks">
-          <a class="nav-link" href="bookmarks.html">
+          <a class="nav-link" href="<?php echo base_url().'p_karyawan_saya' ?>">
             <i class="fa fa-users" style="color: white;"></i>&nbsp;&nbsp;
             <span class="nav-link-text" style="color: white;">Karyawan saya</span>
           </a>
         </li>
     <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Messages">
-          <a class="nav-link" href="messages.html">
+          <a class="nav-link" href="<?php echo base_url().'p_histori_perusahaan' ?>">
             <i class="fa fa-history" style="color: white;"></i>&nbsp;&nbsp;
-            <span class="nav-link-text" style="color: white;">History Perusahaan</span>
+            <span class="nav-link-text" style="color: white;">Histori Perusahaan</span>
           </a>
         </li>
           <li class="nav-item">
-          <a class="nav-link" href="../grid-listings-filterscol.html">
+          <a class="nav-link" href="<?php echo base_url().'cakar_perusahaan_portal3' ?>">
             <i class="fa fa-search" style="color: white;"></i>&nbsp;&nbsp;
            <span class="nav-link-text" style="color: white;">Cari karyawan</span>
          </a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="faq.html">
+          <a class="nav-link" href="?">
             <i class="fa fa-question-circle" style="color: white;"></i>&nbsp;&nbsp;
            <span class="nav-link-text" style="color: white;">Bantuan</span>
          </a>

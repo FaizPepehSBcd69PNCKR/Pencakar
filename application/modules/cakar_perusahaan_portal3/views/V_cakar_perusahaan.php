@@ -115,11 +115,11 @@
 					</div>
 				</div>
 			</aside>
-			<?php foreach ($tampil as $key) {
-				$id = $key->id_cv
-			 ?>
 				<div class="col-lg-9">
 					<div class="row">
+						<?php foreach ($tampil as $key) {
+							$id = $key->id_cv
+			 			?>
 						<div class="col-md-4">
 							<div class="strip grid">
 								<figure>
@@ -145,27 +145,23 @@
 										<li><a href="#modal-risky" id="modal-riskyT"  style="font-size: 10px; margin-top: -50px;" class="btn_add">Rekrut</a></li>
 									</li>
 									<li>
-									<a href="account.html" style="font-size: 10px; margin-top: 1%; " class="btn btn-success">Selengkapnya</a>
+									<a href="<?php echo base_url('detail_calon_karyawan3/tampil/'. $id); ?>" style="font-size: 10px; margin-top: 1%; " class="btn btn-success">Selengkapnya</a>
 									
 									</li>
 								</ul>
 							</div>
 						</div>
+						<?php } ?>
 					</div>
 				</div>
-			<?php } ?>
+			
 			</div>
 		</div>
 			<br>
 
 				<div class="pagination__wrapper add_bottom_30">
-					<ul class="pagination">
-						<li><a href="#0" class="prev" title="previous page">&#10094;</a></li>
-						<li><a href="#0" class="active">1</a></li>
-						<li><a href="#0" class="active">2</a></li>
-						<li><a href="#0" class="active">3</a></li>
-						<li><a href="#0" class="active">4</a></li>
-						<li><a href="#0" class="next" title="next page">&#10095;</a></li>
+					<ul>
+						<?php echo $this->pagination->create_links(); ?>
 					</ul>
 				</div>
 			</main>

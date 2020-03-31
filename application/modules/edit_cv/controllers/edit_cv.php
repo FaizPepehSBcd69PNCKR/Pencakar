@@ -25,7 +25,7 @@ class Edit_cv extends MX_Controller {
 	function edit()
 	{
 		$this->m_edit_cv->edit();
-		// redirect('edit_cv');
+		redirect('edit_cv');
 	}
 
 }

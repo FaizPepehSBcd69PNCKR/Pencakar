@@ -18,13 +18,14 @@
             <h2 class="d-inline-block"><i class="fa fa-user"></i> &nbsp;Rekrutmen</h2>
   </div>
   <div class="row">
+     <?php foreach ($tampil as $key) {
+                   ?>
   <div class="col-md-6">
         <div class="list_general">
             <ul>
       
                 <li>
-                  <?php foreach ($tampil as $key) {
-                   ?>
+                 
                     <figure><img src="<?= base_url(); ?>assets/cakar/foto34/<?= $key->foto_3x4 ?>" width="120" height="120" alt=""></figure>
                     <h4>Calon Karyawan &nbsp;  <!-- <i class="pending">Pending</i> --></h4>
                     <ul class="booking_list">
@@ -37,25 +38,18 @@
             <a href="#0" class="btn_1 gray delete"><i class="fa fa-fw fa-times-circle-o"></i> Batal</a>
         </p>
                 </li>
-              <?php } ?>
+              
     </ul>
     </div>
   </div>
+  <?php } ?>
 </div>
     
     </div>
     <!-- /box_general-->
     <nav aria-label="...">
         <ul class="pagination pagination-sm add_bottom_30">
-            <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1">Previous</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#">Next</a>
-            </li>
+          <?php echo $this->pagination->create_links(); ?>
         </ul>
     </nav>
   </div>
